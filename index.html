@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dNezast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./build/app.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="main-wrapper">
+      <nav class="navbar bg-gray-200">
+        <div class="nav-wrapper">
+          <div class="navbar-brand">
+            <a href="/" class="brand-item">dNezast</a>
+          </div>
+
+          <div class="toggle-menu">
+            <span class="burger"></span>
+            <span class="burger"></span>
+            <span class="burger"></span>
+          </div>
+
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#project" class="nav-link">Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="#project" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#project" class="nav-link">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container after-nav bg-gray-100">
+        <div class="splash flex flex-col-reverse py-4 px-6">
+          <div class="splash-left py-6">
+            <h1 class="text-2xl font-semibold">Hi, I'am Dani</h1>
+            <h4 class="text-gray-600 text-lg">I'am a Full Stack Developer</h4>
+            <p class="text-gray-600 text-sm text-justify">Professional web developer that have high level experience in developing web design and web application.</p>
+            <a href="#contact" class="get-in-touch py-2 px-4 bg-[#0099ff] hover:bg-[#0077ff] my-4 inline-flex items-center text-white rounded-lg transition duration-200">Get in touch <i class="bx bx-right-arrow-alt ml-1"></i></a>
+          </div>
+          <div class="splash-right py-6 relative flex justify-center">
+            <img src="./assets/img/blob.svg" alt="Blob" class="blob w-2/4" />
+            <img src="./assets/img/MERAH.jpg" alt="Blog Images" class="blob-img w-2/6 z-10 absolute top-14" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let navbar = document.querySelector(".navbar");
+      let offset = 0;
+      window.addEventListener("scroll", function () {
+        let st = window.pageYOffset;
+        if (st > offset) {
+          navbar.classList.add("fixed-nav");
+          document.querySelector(".after-nav").style.paddingTop = "64px";
+        } else {
+          navbar.classList.remove("fixed-nav");
+          document.querySelector(".after-nav").style.paddingTop = "0";
+        }
+      });
+
+      let hMenu = document.querySelector(".toggle-menu");
+      hMenu.addEventListener("click", function () {
+        this.classList.toggle("show");
+        document.querySelector(".nav-menu").classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
