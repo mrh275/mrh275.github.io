@@ -44,18 +44,38 @@
       </nav>
 
       <div class="main-content after-nav">
-        <div class="container mx-auto">
-          <div class="splash flex flex-col-reverse py-4 px-6">
-            <div class="splash-left py-6">
-              <h1 class="text-2xl font-semibold">Hi, I'am Dani</h1>
-              <h4 class="text-gray-600 text-lg">I'am a Full Stack Developer</h4>
-              <p class="text-gray-600 text-sm text-justify">Professional web developer that have high level experience in developing web design and web application.</p>
+        <div class="container mx-auto pb-8">
+          <div class="splash flex flex-col-reverse lg:flex-row lg:justify-between py-4 lg:pt-20 lg:pb-18 px-12 lg:px-28">
+            <div class="splash-left lg:w-2/4 py-6">
+              <h1 class="text-2xl lg:text-6xl font-semibold">Hi, I'am Dani</h1>
+              <h4 class="text-gray-600 text-lg lg:text-2xl font-semibold">I'am a Full Stack Developer</h4>
+              <p class="text-gray-600 text-sm lg:text-lg mt-4 text-justify">Professional web developer that have high level experience in developing web design and web application.</p>
               <a href="#contact" class="get-in-touch py-2 px-4 bg-[#0099ff] hover:bg-[#0077ff] my-4 inline-flex items-center text-white rounded-lg transition duration-200">Get in touch <i class="bx bx-right-arrow-alt ml-1"></i></a>
             </div>
-            <div class="splash-right py-6 relative flex justify-center">
-              <img src="./assets/img/blob.svg" alt="Blob" class="blob w-2/4" />
-              <img src="./assets/img/MERAH.jpg" alt="Blog Images" class="blob-img w-2/6 z-10 absolute top-14" />
+            <div class="splash-right lg:w-2/4 py-6 lg:py-0 relative flex justify-center">
+              <svg class="blob fill-[#0099ff] w-3/4" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image class="home__blob-img" x="29" y="18" href="./assets/img/profile.png" style="width: 150px" />
+                </g>
+              </svg>
             </div>
+          </div>
+          <div class="scroll-down w-full flex justify-start px-10 lg:px-[6.5rem]">
+            <a href="#about" class="scroll-down-btn flex items-center py-2"><i class="bx bx-mouse text-4xl text-[#0099ff]"></i> Scroll Down <i class="bx bx-down-arrow-alt arrow-bawah text-xl text-[#0099ff]"></i></a>
           </div>
         </div>
 
@@ -64,7 +84,7 @@
           <div class="about-section">
             <div class="card">
               <div class="card-header flex justify-center">
-                <img src="./assets/img/MERAH.jpg" alt="About Me Images" class="about-img w-2/3 rounded-lg" />
+                <img src="./assets/img/profile.png" alt="About Me Images" class="about-img w-2/3 rounded-lg" />
               </div>
               <div class="card-body py-4">
                 <p class="about-desc text-justify text-lg lg:text-xl">
@@ -97,6 +117,8 @@
       </div>
     </div>
 
+    <button class="scroll-top-btn fixed -bottom-full right-0 mr-10 mb-10 bg-[#0099ff] hover:bg-[#0077ff] text-white flex justify-center items-center px-2 py-2 rounded-md transition-all duration-300"><i class="bx bx-up-arrow-alt"></i></button>
+
     <script>
       let navbar = document.querySelector(".navbar");
       let offset = 0;
@@ -104,13 +126,18 @@
         let st = window.pageYOffset;
         if (st > offset) {
           navbar.classList.add("fixed-nav");
+          document.querySelector(".scroll-top-btn").classList.add("bottom-0");
+          document.querySelector(".scroll-top-btn").classList.remove("-bottom-full");
           // document.querySelector(".after-nav").style.paddingTop = "64px";
         } else {
           navbar.classList.remove("fixed-nav");
+          document.querySelector(".scroll-top-btn").classList.remove("bottom-0");
+          document.querySelector(".scroll-top-btn").classList.add("-bottom-full");
           // document.querySelector(".after-nav").style.paddingTop = "0";
         }
       });
 
+      // Toggle Menu
       let hMenu = document.querySelector(".toggle-menu");
       hMenu.addEventListener("click", function () {
         if (!hMenu.classList.contains("show")) {
@@ -120,6 +147,15 @@
           this.classList.remove("show");
           document.querySelector(".nav-menu").classList.remove("show");
         }
+      });
+
+      // Scroll to top
+      let scrollTopBtn = document.querySelector(".scroll-top-btn");
+      scrollTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       });
     </script>
   </body>
