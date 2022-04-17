@@ -11,6 +11,20 @@ html {
 @tailwind utilities;
 
 @layer components {
+  /* Buttons */
+  .btn {
+    @apply py-2.5 px-4 rounded-lg font-semibold flex items-center transition-all duration-300;
+  }
+
+  .btn-sm {
+    @apply flex justify-center items-center px-2 py-2 rounded-md transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-[#0099ff] text-white hover:bg-[#0077ff];
+  }
+  /* End Buttons */
+
   /* Navbar */
 
   .navbar {
@@ -78,7 +92,27 @@ html {
   /* End Menu */
 
   /* Hero Section */
-  .bx {
+  .splash {
+    @apply flex flex-col-reverse lg:flex-row lg:justify-between py-4 lg:pt-20 lg:pb-10 px-12 lg:px-28;
+  }
+
+  .splash-left {
+    @apply lg:w-2/4 py-6;
+  }
+
+  .greet-splash {
+    @apply text-2xl lg:text-6xl font-semibold;
+  }
+
+  .job-splash {
+    @apply text-gray-600 text-lg lg:text-2xl font-semibold;
+  }
+
+  .job-desc-splash {
+    @apply text-gray-600 text-sm lg:text-lg mt-4 text-justify;
+  }
+
+  .bx-right-arrow-alt {
     @apply transition duration-200;
   }
 
@@ -86,10 +120,78 @@ html {
     @apply translate-x-1;
   }
 
+  .scroll-down {
+    @apply w-full flex justify-start px-10 lg:px-[6.5rem];
+  }
+
   .scroll-down-btn {
-    @apply transition-all duration-200 hover:translate-y-1;
+    @apply hover:translate-y-1 transition-all duration-300;
   }
   /* End Hero Section */
+
+  /* About Section */
+  .about {
+    @apply bg-zinc-100 mx-auto px-8 lg:px-20 py-6;
+  }
+
+  .about-title {
+    @apply text-center font-semibold text-2xl lg:text-4xl text-zinc-700 pb-6;
+  }
+
+  .about .card {
+    @apply lg:flex lg:justify-between;
+  }
+
+  .about .card-header {
+    @apply flex justify-center lg:w-2/4 lg:px-28;
+  }
+
+  .about-img {
+    @apply w-2/3 lg:w-full lg:h-min rounded-lg;
+  }
+
+  .about-desc {
+    @apply text-justify text-base lg:text-lg text-zinc-800;
+  }
+
+  .about-exp {
+    @apply flex justify-between items-center;
+  }
+
+  .about-exp .exp,
+  .project-complete,
+  .client {
+    @apply text-2xl font-semibold text-zinc-700;
+  }
+
+  .about-cv {
+    @apply py-4 flex justify-center lg:justify-start items-center;
+  }
+  /* End About Section */
+
+  /* Journey Section */
+  .edu-btn,
+  .work-btn {
+    @apply border-b-2 border-transparent relative transition-all duration-300 ease-in-out;
+  }
+
+  .edu-btn.active,
+  .work-btn.active {
+    @apply text-[#0099ff];
+  }
+
+  .edu-btn::after,
+  .work-btn::after {
+    @apply content-[''] absolute w-0 h-[2px] left-0 bottom-0 bg-[#0099ff] transition-all duration-300 ease-in-out;
+  }
+
+  .edu-btn:active::after,
+  .edu-btn.active::after,
+  .work-btn:active::after,
+  .work-btn.active::after {
+    @apply w-full left-0;
+  }
+  /* End Journey Section */
 }
 
 nav.navbar,
