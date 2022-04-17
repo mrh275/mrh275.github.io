@@ -101,7 +101,11 @@ html {
   }
 
   .greet-splash {
-    @apply text-2xl lg:text-6xl font-semibold;
+    @apply text-2xl lg:text-4xl font-semibold inline-block;
+  }
+
+  .typed-cursor {
+    @apply opacity-[1] text-[1.5rem] lg:text-[2.1rem];
   }
 
   .job-splash {
@@ -125,7 +129,7 @@ html {
   }
 
   .scroll-down-btn {
-    @apply hover:translate-y-1 transition-all duration-300;
+    @apply flex items-center justify-between hover:translate-y-1 transition-all duration-300;
   }
   /* End Hero Section */
 

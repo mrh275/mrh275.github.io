@@ -845,6 +845,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .greet-splash {
+  display: inline-block;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
@@ -852,8 +853,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 1024px) {
   .greet-splash {
-    font-size: 3.75rem;
-    line-height: 1;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.typed-cursor {
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .typed-cursor {
+    font-size: 2.1rem;
   }
 }
 
@@ -917,6 +929,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .scroll-down-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
@@ -1294,16 +1309,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-\[200\%\] {
-  --tw-translate-x: 200%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[-200\%\] {
-  --tw-translate-x: -200%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .translate-y-0 {
   --tw-translate-y: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1539,6 +1544,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1576,6 +1585,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+.opacity-\[1\] {
+  opacity: 1;
 }
 
 .shadow-lg {
@@ -1748,19 +1761,14 @@ nav.navbar,
     line-height: 2rem;
   }
 
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .lg\:shadow-none {
