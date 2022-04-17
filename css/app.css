@@ -2,14 +2,27 @@
   font-family: "Outfit", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   /* Navbar */
+
+  .navbar {
+    @apply absolute w-full z-50 bg-zinc-100 lg:bg-transparent;
+  }
+
+  .navbar.fixed-nav {
+    @apply bg-zinc-100;
+  }
+
   .nav-wrapper {
-    @apply relative h-12 lg:h-16 lg:px-8 flex justify-between items-center lg:shadow-none z-50;
+    @apply relative h-12 lg:h-auto lg:px-8 flex justify-between items-center lg:shadow-none z-50;
   }
 
   .navbar.fixed-nav {
@@ -25,7 +38,7 @@
   }
 
   .nav-menu {
-    @apply list-none w-full transition duration-500 absolute -translate-y-[120%] top-10 bg-gray-200 text-gray-700 py-4 z-40 lg:z-0 lg:w-auto lg:relative lg:translate-y-0 lg:top-0 lg:inline-flex lg:bg-transparent lg:mr-8;
+    @apply list-none w-full transition duration-500 absolute -translate-y-[120%] top-10 bg-zinc-100 text-gray-700 py-4 z-40 lg:z-0 lg:w-auto lg:relative lg:translate-y-0 lg:top-0 lg:inline-flex lg:bg-transparent lg:mr-8;
   }
   /* End Navbar */
 
@@ -67,4 +80,20 @@
   .get-in-touch:hover .bx-right-arrow-alt {
     @apply translate-x-1;
   }
+}
+
+nav.navbar,
+.nav-wrapper,
+.nav-brand,
+.nav-menu {
+  transition: 0.3s;
+}
+
+.navbar.fixed-nav .nav-menu {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.after-nav {
+  padding-top: 64px !important;
 }
