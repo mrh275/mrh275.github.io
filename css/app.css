@@ -97,7 +97,7 @@ html {
   }
 
   .splash-left {
-    @apply lg:w-2/4 py-6;
+    @apply lg:w-2/4 py-6 block relative my-auto;
   }
 
   .greet-splash {
@@ -174,6 +174,34 @@ html {
   /* End About Section */
 
   /* Journey Section */
+  .journey-wrapper {
+    @apply mx-auto px-8 lg:px-20 py-6;
+  }
+
+  .journey-title {
+    @apply text-center text-xl font-semibold text-zinc-700 my-4;
+  }
+
+  .journey-tab {
+    @apply flex justify-center items-center text-lg py-4;
+  }
+
+  .journey-tabs-wrapper {
+    @apply relative flex justify-center;
+  }
+
+  .journey-edu-wrapper {
+    @apply grid mx-auto;
+  }
+
+  .edu-round {
+    @apply inline-block w-[13px] h-[13px] bg-[#0099ff] rounded-full;
+  }
+
+  .edu-line {
+    @apply block w-[1px] h-full bg-[#0099ff] translate-x-[6px] translate-y-[-7px];
+  }
+
   .edu-btn,
   .work-btn {
     @apply border-b-2 border-transparent relative transition-all duration-300 ease-in-out;
