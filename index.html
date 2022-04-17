@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dNezast</title>
+
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./build/app.css" />
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body class="overflow-x-hidden">
     <div class="main-wrapper">
@@ -47,8 +54,7 @@
         <div class="container mx-auto pb-8">
           <div class="splash">
             <div class="splash-left">
-              <h1 class="greet-splash">Hi, I'am Dani</h1>
-              <h4 class="job-splash">I'am a Full Stack Developer</h4>
+              <h1 class="greet-splash" id="greet-splash">&nbsp;</h1>
               <p class="job-desc-splash">Professional web developer that have high level experience in developing web design and web application.</p>
               <a href="#contact" class="get-in-touch btn btn-primary my-4 inline-flex">Get in touch <i class="bx bx-right-arrow-alt ml-1"></i></a>
             </div>
@@ -89,8 +95,9 @@
               <div class="lg:w-2/4 lg:pr-28">
                 <div class="card-body py-4">
                   <p class="about-desc">
-                    Hi everyone👋 I'm Dani, a full stack web developer. I have a passion for web development and I'm always looking for new challenges. I'm a self-taught web developer with a strong background in web design and web development. I'm
-                    currently working as a freelancer.
+                    Hi everyone👋 My name is Muhamad Ramdani Hidayatullah, I live in Karawang, West Java - Indonesia. I'am a Full Stack Web Developer and also an Administration Staff in a formal educational institution. I work as an application
+                    manager called Dapodik (Data Pokok Pendidikan) and also as a Web Developer at this institution. I have a passion for web development and I'm always looking for new challenges. I'm a self-taught web developer with a strong
+                    background in web design and web development.
                   </p>
                 </div>
                 <div class="card-footer py-4">
@@ -250,6 +257,19 @@
     <button class="scroll-top-btn btn-sm btn-primary fixed -bottom-full right-0 mr-10 mb-10"><i class="bx bx-up-arrow-alt"></i></button>
 
     <script>
+      // Greetings Typed.js
+      var typed = new Typed("#greet-splash", {
+        strings: ["Hi, I'am Dani", "I'm a Full Stack Web Developer", "I create awesome websites", "Feel free to contact me!"],
+        typeSpeed: 40,
+        backSpeed: 40,
+        backDelay: 1000,
+        loop: true,
+        smartBackspace: true,
+        loop: true,
+        cursorChar: "|",
+      });
+
+      // Navbar Animation on Scroll
       let navbar = document.querySelector(".navbar");
       let offset = 0;
       window.addEventListener("scroll", function () {
@@ -258,12 +278,10 @@
           navbar.classList.add("fixed-nav");
           document.querySelector(".scroll-top-btn").classList.add("bottom-0");
           document.querySelector(".scroll-top-btn").classList.remove("-bottom-full");
-          // document.querySelector(".after-nav").style.paddingTop = "64px";
         } else {
           navbar.classList.remove("fixed-nav");
           document.querySelector(".scroll-top-btn").classList.remove("bottom-0");
           document.querySelector(".scroll-top-btn").classList.add("-bottom-full");
-          // document.querySelector(".after-nav").style.paddingTop = "0";
         }
       });
 
