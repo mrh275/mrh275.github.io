@@ -11,7 +11,7 @@
   </head>
   <body class="overflow-x-hidden">
     <div class="main-wrapper">
-      <nav class="navbar bg-gray-200">
+      <nav class="navbar">
         <div class="nav-wrapper">
           <div class="navbar-brand">
             <a href="/" class="brand-item">dNezast</a>
@@ -43,17 +43,55 @@
         </div>
       </nav>
 
-      <div class="container after-nav bg-gray-100">
-        <div class="splash flex flex-col-reverse py-4 px-6">
-          <div class="splash-left py-6">
-            <h1 class="text-2xl font-semibold">Hi, I'am Dani</h1>
-            <h4 class="text-gray-600 text-lg">I'am a Full Stack Developer</h4>
-            <p class="text-gray-600 text-sm text-justify">Professional web developer that have high level experience in developing web design and web application.</p>
-            <a href="#contact" class="get-in-touch py-2 px-4 bg-[#0099ff] hover:bg-[#0077ff] my-4 inline-flex items-center text-white rounded-lg transition duration-200">Get in touch <i class="bx bx-right-arrow-alt ml-1"></i></a>
+      <div class="main-content after-nav">
+        <div class="container mx-auto">
+          <div class="splash flex flex-col-reverse py-4 px-6">
+            <div class="splash-left py-6">
+              <h1 class="text-2xl font-semibold">Hi, I'am Dani</h1>
+              <h4 class="text-gray-600 text-lg">I'am a Full Stack Developer</h4>
+              <p class="text-gray-600 text-sm text-justify">Professional web developer that have high level experience in developing web design and web application.</p>
+              <a href="#contact" class="get-in-touch py-2 px-4 bg-[#0099ff] hover:bg-[#0077ff] my-4 inline-flex items-center text-white rounded-lg transition duration-200">Get in touch <i class="bx bx-right-arrow-alt ml-1"></i></a>
+            </div>
+            <div class="splash-right py-6 relative flex justify-center">
+              <img src="./assets/img/blob.svg" alt="Blob" class="blob w-2/4" />
+              <img src="./assets/img/MERAH.jpg" alt="Blog Images" class="blob-img w-2/6 z-10 absolute top-14" />
+            </div>
           </div>
-          <div class="splash-right py-6 relative flex justify-center">
-            <img src="./assets/img/blob.svg" alt="Blob" class="blob w-2/4" />
-            <img src="./assets/img/MERAH.jpg" alt="Blog Images" class="blob-img w-2/6 z-10 absolute top-14" />
+        </div>
+
+        <div class="about bg-zinc-100 mx-auto px-8 lg:px-20 py-6" id="about">
+          <h2 class="about-title text-center font-semibold text-2xl text-zinc-700 pb-6">About Me</h2>
+          <div class="about-section">
+            <div class="card">
+              <div class="card-header flex justify-center">
+                <img src="./assets/img/MERAH.jpg" alt="About Me Images" class="about-img w-2/3 rounded-lg" />
+              </div>
+              <div class="card-body py-4">
+                <p class="about-desc text-justify text-lg lg:text-xl">
+                  Hi everyone👋 I'm Dani, a full stack web developer. I have a passion for web development and I'm always looking for new challenges. I'm a self-taught web developer with a strong background in web design and web development. I'm
+                  currently working as a freelancer.
+                </p>
+              </div>
+              <div class="card-footer py-4">
+                <div class="about-exp flex justify-between items-center">
+                  <div class="box-sm text-center">
+                    <h4 class="text-2xl font-semibold text-zinc-700">03+</h4>
+                    <span class="break-words text-zinc-600">Years experience</span>
+                  </div>
+                  <div class="box-sm text-center">
+                    <h4 class="text-2xl font-semibold text-zinc-700">20+</h4>
+                    <span class="break-words text-zinc-600">Complete project</span>
+                  </div>
+                  <div class="box-sm text-center">
+                    <h4 class="text-2xl font-semibold text-zinc-700">07+</h4>
+                    <span class="break-words text-zinc-600">Companies Client</span>
+                  </div>
+                </div>
+                <div class="about-cv py-4 flex justify-center items-center">
+                  <a href="#" class="btn btn-primary bg-[#0099ff] py-2.5 px-4 rounded-lg text-white font-semibold flex items-center"><i class="bx bx-download"></i>&nbsp; Download CV</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -66,17 +104,22 @@
         let st = window.pageYOffset;
         if (st > offset) {
           navbar.classList.add("fixed-nav");
-          document.querySelector(".after-nav").style.paddingTop = "64px";
+          // document.querySelector(".after-nav").style.paddingTop = "64px";
         } else {
           navbar.classList.remove("fixed-nav");
-          document.querySelector(".after-nav").style.paddingTop = "0";
+          // document.querySelector(".after-nav").style.paddingTop = "0";
         }
       });
 
       let hMenu = document.querySelector(".toggle-menu");
       hMenu.addEventListener("click", function () {
-        this.classList.toggle("show");
-        document.querySelector(".nav-menu").classList.toggle("show");
+        if (!hMenu.classList.contains("show")) {
+          this.classList.add("show");
+          document.querySelector(".nav-menu").classList.add("show");
+        } else {
+          this.classList.remove("show");
+          document.querySelector(".nav-menu").classList.remove("show");
+        }
       });
     </script>
   </body>
