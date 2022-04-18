@@ -1513,7 +1513,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.dark .edu-btn.active {
+.dark .edu-btn.active, .dark .work-btn.active {
   --tw-text-opacity: 1;
   color: rgb(0 153 255 / var(--tw-text-opacity));
 }
