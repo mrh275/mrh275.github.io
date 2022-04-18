@@ -2269,6 +2269,10 @@ nav.navbar,
   .md\:w-2\/3 {
     width: 66.666667%;
   }
+
+  .md\:pb-52 {
+    padding-bottom: 13rem;
+  }
 }
 
 @media (min-width: 1024px) {
