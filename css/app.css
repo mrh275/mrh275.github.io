@@ -146,7 +146,8 @@ html {
 
   .about-title,
   .project-section-title,
-  .skills-title-section {
+  .skills-title-section,
+  .contact-title-section {
     @apply text-center font-semibold text-2xl lg:text-4xl text-zinc-700 pb-6;
   }
 
@@ -268,6 +269,46 @@ html {
     @apply grayscale hover:grayscale-0 mx-2 transition-all duration-500 ease-in-out sm:w-12 md:w-16 lg:w-20;
   }
   /* End Skills Section */
+
+  /* Contact Section */
+  .contact {
+    @apply bg-zinc-100 mx-auto px-8 lg:px-20 py-6;
+  }
+
+  .address {
+    @apply lg:mr-4 lg:w-1/2;
+  }
+
+  .address-wrapper {
+    @apply mb-2;
+  }
+
+  .address-icon {
+    @apply mr-2;
+  }
+
+  .contact-form-wrapper {
+    @apply w-full md:w-2/3 lg:w-1/2 mx-auto lg:ml-4;
+  }
+
+  .form-group {
+    @apply flex flex-col mb-4;
+  }
+
+  .form-group label {
+    @apply text-gray-700 font-semibold mb-2;
+  }
+
+  .form-control {
+    @apply border border-gray-400 rounded-md py-2 px-4 outline-none focus:ring-1 focus:ring-offset-2 focus:ring-offset-[#0099ff] transition-all ease-in-out duration-300;
+  }
+  /* End Contact Section */
+
+  /* Footer */
+  .footer {
+    @apply bg-zinc-200 mx-auto px-8 lg:px-20 py-4;
+  }
+  /* End Footer */
 }
 
 nav.navbar,
