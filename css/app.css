@@ -34,7 +34,7 @@ html {
   /* Navbar */
 
   .navbar {
-    @apply absolute w-full z-50 bg-zinc-100 lg:bg-transparent;
+    @apply fixed w-full z-50 bg-zinc-100 lg:bg-transparent;
   }
 
   .navbar.fixed-nav {
@@ -42,7 +42,7 @@ html {
   }
 
   .nav-wrapper {
-    @apply relative h-12 lg:h-auto px-4 lg:px-8 flex justify-between items-center lg:shadow-none z-50;
+    @apply relative h-12 lg:h-auto px-4 lg:px-8 flex justify-evenly items-center lg:shadow-none z-50;
   }
 
   .navbar.fixed-nav {

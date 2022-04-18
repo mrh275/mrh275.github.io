@@ -586,7 +586,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* Navbar */
 
 .navbar {
-  position: absolute;
+  position: fixed;
   z-index: 50;
   width: 100%;
   --tw-bg-opacity: 1;
@@ -610,7 +610,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
   height: 3rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -1685,6 +1685,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-16 {
   width: 4rem;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .w-1\/3 {
