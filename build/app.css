@@ -589,6 +589,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
   z-index: 50;
   width: 100%;
+  overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
@@ -612,7 +613,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
   justify-content: space-evenly;
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 
 @media (min-width: 1024px) {
@@ -1996,6 +1997,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2.5rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -2003,6 +2009,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .text-center {
