@@ -611,6 +611,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
   align-items: center;
   justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 1024px) {
