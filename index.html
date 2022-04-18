@@ -327,6 +327,74 @@
         </div>
       </div>
       <!-- End Skills Section -->
+
+      <!-- Contact Section -->
+      <div class="contact" id="contact">
+        <h2 class="contact-title-section">Contact Me</h2>
+        <div class="contact-wrapper flex flex-col-reverse lg:flex-row">
+          <div class="address">
+            <div class="address-wrapper flex flex-row">
+              <div class="address-icon">
+                <i class="bx bx-map"></i>
+              </div>
+              <div class="address-content">
+                <p class="text-zinc-700 text-sm">Jl. Raya Jatisari - Sukamaju 2 RT. 01 RW. 04 Ds. Jatisari Kec. Jatisari Kab. Karawang - Jawa Barat, 41374</p>
+              </div>
+            </div>
+            <div class="address-wrapper flex flex-row">
+              <div class="address-icon">
+                <i class="bx bx-phone"></i>
+              </div>
+              <div class="address-content">
+                <p class="text-zinc-700 text-sm">+62 811-XXXX-XXXX</p>
+              </div>
+            </div>
+            <div class="address-wrapper flex flex-row">
+              <div class="address-icon">
+                <i class="bx bx-envelope"></i>
+              </div>
+              <div class="address-content">
+                <p class="text-zinc-700 text-sm">mail@muhamadramdani.my.id</p>
+              </div>
+            </div>
+            <div class="address-wrapper flex flex-row">
+              <div class="address-icon">
+                <i class="bx bxl-github"></i>
+              </div>
+              <div class="address-content">
+                <a href="https://github.com/muhamadramdani275" target="_blank" class="text-zinc-700 text-sm">https://github.com/muhamadramdani275</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <form action="" method="post">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
+              </div>
+              <div class="form-group md:block">
+                <button type="submit" class="btn-sm btn-primary"><i class="bx bx-paper-plane mr-1"></i> Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact Section -->
+
+      <!-- Footer -->
+      <footer class="footer flex flex-col lg:flex-row justify-between items-center">
+        <div class="footer-left">Copyright ©️ <span class="date-now"></span> dNezast. All Right Reserved.</div>
+        <div class="footer-right">Made with ❤️ by Muhamad Ramdani Hidayatullah</div>
+      </footer>
+      <!-- End Footer -->
     </div>
 
     <button class="scroll-top-btn btn-sm btn-primary fixed -bottom-full right-0 mr-10 mb-10"><i class="bx bx-up-arrow-alt"></i></button>
@@ -404,6 +472,12 @@
       AOS.init({
         duration: 800,
       });
+
+      let dateEl = document.querySelector(".date-now"),
+        today = new Date(),
+        year = today.getFullYear();
+      today = year;
+      dateEl.innerHTML = today;
     </script>
     <script src="./assets/js/gallery.js"></script>
   </body>
