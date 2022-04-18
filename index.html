@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./build/app.css" />
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -308,20 +309,20 @@
         <h2 class="skills-title-section">My Skills</h2>
         <div class="skills-wrapper flex flex-wrap justify-center items-center px-16">
           <div class="skills-1 w-full flex justify-evenly items-center my-2">
-            <img src="./assets/img/skills/html.png" alt="html" class="w-8 h-min" />
-            <img src="./assets/img/skills/css.png" alt="css" class="w-8 h-min" />
-            <img src="./assets/img/skills/js.png" alt="js" class="w-8 h-min" />
-            <img src="./assets/img/skills/bootstrap.png" alt="bootstrap" class="w-10 h-min" />
-            <img src="./assets/img/skills/tailwind.png" alt="tailwind" class="w-10 h-min" />
-            <img src="./assets/img/skills/php.png" alt="php" class="w-10 h-min" />
+            <img src="./assets/img/skills/html.png" alt="html" class="w-8 h-min html" data-aos="fade-right" />
+            <img src="./assets/img/skills/css.png" alt="css" class="w-8 h-min css" data-aos="fade-down-left" />
+            <img src="./assets/img/skills/js.png" alt="js" class="w-8 h-min js" data-aos="fade-down-left" />
+            <img src="./assets/img/skills/bootstrap.png" alt="bootstrap" class="w-10 h-min bootstrap" data-aos="fade-down-right" />
+            <img src="./assets/img/skills/tailwind.png" alt="tailwind" class="w-10 h-min tailwind" data-aos="fade-down-left" />
+            <img src="./assets/img/skills/php.png" alt="php" class="w-10 h-min php" data-aos="fade-left" />
           </div>
           <div class="skills-2 w-full flex justify-evenly items-center my-2">
-            <img src="./assets/img/skills/codeigniter.png" alt="codeigniter" class="w-8 h-min" />
-            <img src="./assets/img/skills/laravel.png" alt="laravel" class="w-8 h-min" />
-            <img src="./assets/img/skills/mysql.png" alt="mysql" class="w-10 h-min" />
-            <img src="./assets/img/skills/photoshop.png" alt="photoshop" class="w-8 h-min" />
-            <img src="./assets/img/skills/android-studio.png" alt="android-studio" class="w-10 h-min" />
-            <img src="./assets/img/skills/flutter.png" alt="flutter" class="w-8 h-min" />
+            <img src="./assets/img/skills/codeigniter.png" alt="codeigniter" class="w-8 h-min ci" data-aos="fade-right" />
+            <img src="./assets/img/skills/laravel.png" alt="laravel" class="w-8 h-min laravel" data-aos="fade-up-right" />
+            <img src="./assets/img/skills/mysql.png" alt="mysql" class="w-10 h-min mysql" data-aos="fade-up-left" />
+            <img src="./assets/img/skills/photoshop.png" alt="photoshop" class="w-8 h-min photoshop" data-aos="fade-up-right" />
+            <img src="./assets/img/skills/android-studio.png" alt="android-studio" class="w-10 h-min android-studio" data-aos="fade-up-left" />
+            <img src="./assets/img/skills/flutter.png" alt="flutter" class="w-8 h-min flutter" data-aos="fade-left" />
           </div>
         </div>
       </div>
@@ -330,6 +331,10 @@
 
     <button class="scroll-top-btn btn-sm btn-primary fixed -bottom-full right-0 mr-10 mb-10"><i class="bx bx-up-arrow-alt"></i></button>
 
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       // Greetings Typed.js
       var typed = new Typed("#greet-splash", {
@@ -395,10 +400,11 @@
           behavior: "smooth",
         });
       });
+
+      AOS.init({
+        duration: 800,
+      });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script>
     <script src="./assets/js/gallery.js"></script>
   </body>
 </html>
