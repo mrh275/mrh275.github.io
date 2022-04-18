@@ -1349,12 +1349,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-left: 5rem;
     padding-right: 5rem;
   }
+}
 
-  .address {
+.address, .contact-form-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .address, .contact-form-wrapper {
+    width: 66.666667%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .address, .contact-form-wrapper {
     margin-right: 1rem;
   }
 
-  .address {
+  .address, .contact-form-wrapper {
     width: 50%;
   }
 }
@@ -1365,28 +1379,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .address-icon {
   margin-right: 0.5rem;
-}
-
-.contact-form-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .contact-form-wrapper {
-    width: 66.666667%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .contact-form-wrapper {
-    margin-left: 1rem;
-  }
-
-  .contact-form-wrapper {
-    width: 50%;
-  }
 }
 
 .form-group {
@@ -2230,10 +2222,6 @@ nav.navbar,
 
   .lg\:ml-0 {
     margin-left: 0px;
-  }
-
-  .lg\:mr-4 {
-    margin-right: 1rem;
   }
 
   .lg\:block {
