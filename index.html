@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./dist/css/app.css" />
+    <link rel="stylesheet" href="./build/app.css" />
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -24,12 +24,6 @@
         <div class="nav-wrapper">
           <div class="navbar-brand">
             <a href="/" class="brand-item">dNezast</a>
-          </div>
-
-          <div class="toggle-menu">
-            <span class="burger"></span>
-            <span class="burger"></span>
-            <span class="burger"></span>
           </div>
 
           <ul class="nav-menu">
@@ -49,6 +43,19 @@
               <a href="#contact" class="nav-link">Contact Me</a>
             </li>
           </ul>
+
+          <div class="toggle-darkMode border bg-zinc-700 p-1 rounded-full cursor-pointer mr-4 lg:mr-0" id="toggle-darkMode">
+            <span class="darkMode-btn flex w-4 overflow-x-hidden">
+              <i class="bx bxs-moon text-white"></i>
+              <i class="bx bxs-sun text-yellow-600"></i>
+            </span>
+          </div>
+
+          <div class="toggle-menu">
+            <span class="burger"></span>
+            <span class="burger"></span>
+            <span class="burger"></span>
+          </div>
         </div>
       </nav>
 
@@ -413,6 +420,12 @@
         backDelay: 1000,
         smartBackspace: true,
         loop: true,
+      });
+
+      // Toggle dark mode
+      const toggleSwitch = document.querySelector("#toggle-darkMode");
+      toggleSwitch.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
       });
 
       // Navbar Animation on Scroll

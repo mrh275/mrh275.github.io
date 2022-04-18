@@ -310,6 +310,61 @@ html {
     @apply bg-zinc-200 mx-auto px-8 lg:px-20 py-4;
   }
   /* End Footer */
+
+  /* Dark Mode */
+  .bxs-sun,
+  .bxs-moon {
+    @apply transition-all ease-in-out duration-300;
+  }
+  .dark .bxs-sun,
+  .dark .bxs-moon {
+    @apply -translate-x-4;
+  }
+
+  .dark,
+  .dark .navbar.fixed-nav,
+  .dark .project,
+  .dark .skills,
+  .dark .footer {
+    @apply bg-zinc-800;
+  }
+
+  .dark .about,
+  .dark .contact {
+    @apply bg-zinc-700;
+  }
+
+  .dark .brand-item,
+  .dark .nav-menu,
+  .dark .splash-left,
+  .dark .job-desc-splash,
+  .dark .scroll-down-btn,
+  .dark .about-title,
+  .dark .about-desc,
+  .dark .box-sm h4,
+  .dark .box-sm span,
+  .dark .journey-title,
+  .dark .edu-btn,
+  .dark .work-btn,
+  .dark .journey-edu-wrapper h4,
+  .dark .journey-edu-wrapper small,
+  .dark .project h2,
+  .dark .skills h2,
+  .dark .contact h2,
+  .dark .contact h3,
+  .dark .contact i,
+  .dark .contact p,
+  .dark .contact a,
+  .dark .contact label,
+  .dark .footer,
+  .dark .footer span {
+    @apply text-white;
+  }
+
+  .dark .edu-btn.active {
+    @apply text-[#0099ff];
+  }
+  /* End Dark Mode */
 }
 
 nav.navbar,
