@@ -145,7 +145,8 @@ html {
   }
 
   .about-title,
-  .project-section-title {
+  .project-section-title,
+  .skills-title-section {
     @apply text-center font-semibold text-2xl lg:text-4xl text-zinc-700 pb-6;
   }
 
@@ -261,6 +262,12 @@ html {
     @apply text-xs lg:text-sm hidden lg:block;
   }
   /* End Project Section */
+
+  /* Skills Section */
+  .skills img {
+    @apply grayscale hover:grayscale-0 mx-2 transition-all duration-300 ease-in-out sm:w-12 md:w-16 lg:w-20;
+  }
+  /* End Skills Section */
 }
 
 nav.navbar,
