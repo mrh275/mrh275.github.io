@@ -2386,6 +2386,14 @@ nav.navbar,
     padding-bottom: 2.5rem;
   }
 
+  .lg\:pb-56 {
+    padding-bottom: 14rem;
+  }
+
+  .lg\:pb-64 {
+    padding-bottom: 16rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
