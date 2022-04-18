@@ -64,7 +64,7 @@ html {
 
   /* Toggle Menu */
   .toggle-menu {
-    @apply block mr-6 cursor-pointer lg:hidden z-50;
+    @apply block cursor-pointer lg:hidden z-50;
   }
   .burger {
     @apply block border-t-[2.5px] border-gray-700 w-5 h-1.5 transition duration-200 origin-top-right;

@@ -734,7 +734,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .toggle-menu {
   z-index: 50;
-  margin-right: 1.5rem;
   display: block;
   cursor: pointer;
 }
