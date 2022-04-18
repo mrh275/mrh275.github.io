@@ -58,7 +58,7 @@ html {
   }
 
   .nav-menu {
-    @apply list-none w-full transition duration-500 absolute -translate-y-[120%] top-10 bg-zinc-100 text-gray-700 py-4 z-40 lg:z-0 lg:w-auto lg:relative lg:translate-y-0 lg:top-0 lg:inline-flex lg:bg-transparent lg:mr-8;
+    @apply list-none w-full transition duration-500 absolute -translate-y-[120%] top-10 left-0 bg-zinc-100 text-gray-700 py-4 z-40 lg:z-0 lg:w-auto lg:relative lg:translate-y-0 lg:top-0 lg:inline-flex lg:bg-transparent lg:mr-8;
   }
   /* End Navbar */
 
@@ -312,6 +312,10 @@ html {
   /* End Footer */
 
   /* Dark Mode */
+  .toggle-darkMode {
+    @apply border border-zinc-600 bg-zinc-700 p-1 rounded-full cursor-pointer mr-4 lg:mr-0 relative z-50;
+  }
+
   .bxs-sun,
   .bxs-moon {
     @apply transition-all ease-in-out duration-300;
@@ -324,6 +328,7 @@ html {
   .dark,
   .dark .navbar,
   .dark .navbar.fixed-nav,
+  .dark .nav-menu,
   .dark .project,
   .dark .skills,
   .dark .footer {
