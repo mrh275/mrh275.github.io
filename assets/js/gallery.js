@@ -3,6 +3,12 @@ const vervalPonsel = document.getElementById("vervalPonsel");
 const vervalGallery = window.lightGallery(vervalPonsel, {
   dynamic: true,
   plugins: [lgZoom, lgThumbnail],
+  closeable: true,
+  closeOnTap: true,
+  escKey: true,
+  mobileSettings: {
+    showCloseIcon: true,
+  },
   dynamicEl: [
     {
       src: "http://localhost:3000/assets/img/project/verval-ponsel.png",
@@ -47,6 +53,12 @@ const semesta = document.getElementById("semesta");
 const semestaGallery = window.lightGallery(semesta, {
   dynamic: true,
   plugins: [lgZoom, lgThumbnail],
+  closeable: true,
+  closeOnTap: true,
+  escKey: true,
+  mobileSettings: {
+    showCloseIcon: true,
+  },
   dynamicEl: [
     {
       src: "http://localhost:3000/assets/img/project/semesta/semesta-1.png",
@@ -76,6 +88,12 @@ const jejakLulusan = document.getElementById("jejakLulusan");
 const lulusanGallery = window.lightGallery(jejakLulusan, {
   dynamic: true,
   plugins: [lgZoom, lgThumbnail],
+  closeable: true,
+  closeOnTap: true,
+  escKey: true,
+  mobileSettings: {
+    showCloseIcon: true,
+  },
   dynamicEl: [
     {
       src: "http://localhost:3000/assets/img/project/jejak-lulusan/jejak-lulusan-1.png",
