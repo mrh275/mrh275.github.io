@@ -586,10 +586,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* Navbar */
 
 .navbar {
-  position: fixed;
+  position: absolute;
   z-index: 50;
   width: 100%;
-  overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
@@ -2014,18 +2013,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5rem;
 }
 
-.py-2\.5 {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-36 {
+  padding-bottom: 9rem;
 }
 
 .pl-4 {
@@ -2036,16 +2043,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
 .pb-32 {
   padding-bottom: 8rem;
-}
-
-.pb-36 {
-  padding-bottom: 9rem;
 }
 
 .text-center {
@@ -2269,10 +2268,6 @@ nav.navbar,
   .md\:w-2\/3 {
     width: 66.666667%;
   }
-
-  .md\:pb-52 {
-    padding-bottom: 13rem;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -2388,14 +2383,6 @@ nav.navbar,
 
   .lg\:pb-10 {
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:pb-56 {
-    padding-bottom: 14rem;
-  }
-
-  .lg\:pb-64 {
-    padding-bottom: 16rem;
   }
 
   .lg\:text-2xl {
