@@ -322,6 +322,7 @@ html {
   }
 
   .dark,
+  .dark .navbar,
   .dark .navbar.fixed-nav,
   .dark .project,
   .dark .skills,

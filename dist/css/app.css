@@ -1472,7 +1472,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.dark, .dark .navbar.fixed-nav, .dark .project, .dark .skills, .dark .footer {
+.dark, .dark .navbar, .dark .navbar.fixed-nav, .dark .project, .dark .skills, .dark .footer {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }

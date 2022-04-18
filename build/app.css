@@ -1472,7 +1472,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.dark, .dark .navbar.fixed-nav, .dark .project, .dark .skills, .dark .footer {
+.dark, .dark .navbar, .dark .navbar.fixed-nav, .dark .project, .dark .skills, .dark .footer {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
@@ -1485,6 +1485,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark .brand-item, .dark .nav-menu, .dark .splash-left, .dark .job-desc-splash, .dark .scroll-down-btn, .dark .about-title, .dark .about-desc, .dark .box-sm h4, .dark .box-sm span, .dark .journey-title, .dark .edu-btn, .dark .work-btn, .dark .journey-edu-wrapper h4, .dark .journey-edu-wrapper small, .dark .project h2, .dark .skills h2, .dark .contact h2, .dark .contact h3, .dark .contact i, .dark .contact p, .dark .contact a, .dark .contact label, .dark .footer, .dark .footer span {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .toggle-menu .burger {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .dark .edu-btn.active {
@@ -1949,6 +1954,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-none {
   border-style: none;
+}
+
+.border-zinc-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(82 82 91 / var(--tw-border-opacity));
 }
 
 .border-transparent {
