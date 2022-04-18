@@ -361,6 +361,10 @@ html {
     @apply text-white;
   }
 
+  .dark .toggle-menu .burger {
+    @apply border-white;
+  }
+
   .dark .edu-btn.active {
     @apply text-[#0099ff];
   }

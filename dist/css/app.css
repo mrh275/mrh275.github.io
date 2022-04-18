@@ -1487,6 +1487,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.dark .toggle-menu .burger {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .dark .edu-btn.active {
   --tw-text-opacity: 1;
   color: rgb(0 153 255 / var(--tw-text-opacity));
@@ -1949,6 +1954,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-none {
   border-style: none;
+}
+
+.border-zinc-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(82 82 91 / var(--tw-border-opacity));
 }
 
 .border-transparent {
