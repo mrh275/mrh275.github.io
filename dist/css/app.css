@@ -677,7 +677,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .nav-menu {
-  position: absolute;
+  position: fixed;
   top: 2.5rem;
   left: 0px;
   z-index: 40;
