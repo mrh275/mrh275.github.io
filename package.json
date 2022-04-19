@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
     "dev:vite": "vite",
-    "dev:app": "tailwindcss -i ./css/app.css -o ./build/app.css --watch",
+    "dev:app": "tailwindcss -i ./css/app.css -o ./dist/css/app.css --watch",
     "build": "npm-run-all --parallel build:*",
     "build:app": "tailwindcss -i ./css/app.css -o ./dist/css/app.css --minifiy"
   },
