@@ -34,7 +34,7 @@ html {
   /* Navbar */
 
   .navbar {
-    @apply absolute w-full z-50 bg-zinc-100 lg:bg-transparent;
+    @apply absolute w-full z-50 bg-zinc-100 lg:bg-transparent transition-all duration-200;
   }
 
   .navbar.fixed-nav {
@@ -58,7 +58,7 @@ html {
   }
 
   .nav-menu {
-    @apply list-none w-full transition duration-500 absolute -translate-y-[120%] top-10 left-0 bg-zinc-100 text-gray-700 py-4 z-40 lg:z-0 lg:w-auto lg:relative lg:translate-y-0 lg:top-0 lg:inline-flex lg:bg-transparent lg:mr-8;
+    @apply list-none w-full transition duration-200 absolute -translate-y-[120%] top-10 left-0 bg-zinc-100 text-gray-700 py-4 z-40 lg:z-0 lg:w-auto lg:relative lg:translate-y-0 lg:top-0 lg:inline-flex lg:bg-transparent lg:mr-8;
   }
   /* End Navbar */
 
@@ -303,6 +303,10 @@ html {
   .form-control {
     @apply border border-gray-400 rounded-md py-2 px-4 outline-none focus:ring-1 focus:ring-offset-2 focus:ring-offset-[#0099ff] transition-all ease-in-out duration-300;
   }
+
+  .loading-send {
+    @apply animate-spin;
+  }
   /* End Contact Section */
 
   /* Footer */
@@ -376,15 +380,69 @@ html {
     @apply text-[#0099ff];
   }
   /* End Dark Mode */
+
+  /* Toast */
+  .toast {
+    @apply bg-emerald-50 shadow-sm rounded-xl py-2 px-3 fixed z-[99] top-16 right-8 border-l-[4px] border-l-emerald-500 overflow-hidden transform translate-x-[120%] transition-all duration-300;
+  }
+
+  .toast.toast-active {
+    @apply transform translate-x-0;
+  }
+
+  .toast .toast-content {
+    @apply flex items-center;
+  }
+
+  .toast-content .toast-check {
+    @apply bg-emerald-500 w-[25px] h-[25px] flex justify-center items-center rounded-full text-white text-[16px];
+  }
+
+  .toast-content .toast-message {
+    @apply flex flex-col mx-3;
+  }
+
+  .toast-message .toast-text {
+    @apply text-[12px] font-[400] text-slate-600;
+  }
+
+  .toast-message .toast-title {
+    @apply font-semibold text-slate-700 text-[14px];
+  }
+
+  .toast .toast-close {
+    @apply absolute top-[5px] right-[10px] text-[12px] cursor-pointer p-[5px] opacity-70 hover:opacity-100;
+  }
+
+  .toast .toast-progress {
+    @apply absolute bottom-0 left-0 h-[3px] w-full bg-slate-100;
+  }
+
+  .toast .toast-progress:before {
+    @apply content-[''] absolute bottom-0 right-0 h-full w-full bg-emerald-500;
+  }
+  /* End Toast */
 }
 
 nav.navbar,
 .nav-wrapper,
 .nav-brand,
-.nav-menu {
-  transition: 0.3s;
+.nav-menu,
+body,
+.main-wrapper {
+  transition: 0.2s;
 }
 
 .after-nav {
   padding-top: 64px !important;
+}
+
+.toast-progress.active:before {
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100% {
+    right: 100%;
+  }
 }

@@ -10,13 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./dist/css/app.css" />
+    <link rel="stylesheet" href="./build/app.css" />
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init("XT3KiVT00iviSpClX");
+    </script>
   </head>
   <body class="overflow-x-hidden">
     <div class="main-wrapper">
@@ -375,21 +381,24 @@
             </div>
           </div>
           <div class="contact-form-wrapper">
-            <form action="" method="post">
+            <form method="post">
               <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" />
+                <small class="invalid-name text-red-500"></small>
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" />
+                <small class="invalid-email text-red-500"></small>
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
                 <textarea name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
+                <small class="invalid-message text-red-500"></small>
               </div>
               <div class="form-group md:block">
-                <button type="submit" class="btn-sm btn-primary"><i class="bx bx-paper-plane mr-1"></i> Send Message</button>
+                <button type="button" onclick="sendMessage()" class="btn-sm btn-primary btn-send"><i class="bx bx-paper-plane mr-1"></i> Send Message</button>
               </div>
             </form>
           </div>
@@ -403,6 +412,17 @@
         <div class="footer-right">Made with ❤️ by Muhamad Ramdani Hidayatullah</div>
       </footer>
       <!-- End Footer -->
+    </div>
+    <div class="toast">
+      <div class="toast-content">
+        <i class="fa fa-check toast-check"></i>
+        <div class="toast-message">
+          <span class="toast-title">Success!</span>
+          <span class="toast-text">Your message has been sent</span>
+        </div>
+      </div>
+      <i class="fa fa-times toast-close"></i>
+      <div class="toast-progress"></div>
     </div>
 
     <button class="scroll-top-btn btn-sm btn-primary fixed -bottom-full right-0 mr-10 mb-10"><i class="bx bx-up-arrow-alt"></i></button>
@@ -495,5 +515,6 @@
       dateEl.innerHTML = today;
     </script>
     <script src="./assets/js/gallery.js"></script>
+    <script src="./assets/js/message.js"></script>
   </body>
 </html>
