@@ -589,6 +589,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
   z-index: 50;
   width: 100%;
+  overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
   transition-property: all;

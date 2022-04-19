@@ -34,7 +34,7 @@ html {
   /* Navbar */
 
   .navbar {
-    @apply absolute w-full z-50 bg-zinc-100 lg:bg-transparent transition-all duration-200;
+    @apply absolute w-full z-50 bg-zinc-100 lg:bg-transparent transition-all duration-200 overflow-x-hidden;
   }
 
   .navbar.fixed-nav {
