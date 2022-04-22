@@ -691,11 +691,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
 }
 
 @media (min-width: 1024px) {
@@ -1216,10 +1211,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* Project Section */
 
 .project {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .project-wrapper {
@@ -1514,9 +1507,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.dark, .dark .navbar, .dark .navbar.fixed-nav, .dark .nav-menu, .dark .project, .dark .skills, .dark .footer {
+.dark, .dark .navbar.fixed-nav, .dark .project, .dark .skills, .dark .footer {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.dark .nav-menu {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px) {
+  .dark .nav-menu {
+    background-color: transparent;
+  }
 }
 
 .dark .about, .dark .contact {
@@ -1739,11 +1743,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1752,6 +1751,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .my-12 {
@@ -2192,11 +2196,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-left-color: rgb(52 211 153 / var(--tw-border-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#0099ff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 153 255 / var(--tw-bg-opacity));
@@ -2221,6 +2220,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
+.bg-zinc-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
 .bg-emerald-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(236 253 245 / var(--tw-bg-opacity));
@@ -2231,9 +2235,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
 }
 
-.bg-zinc-800 {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-slate-200 {
@@ -2300,9 +2304,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .px-16 {
@@ -2353,6 +2357,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px-6 {
