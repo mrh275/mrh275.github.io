@@ -54,7 +54,7 @@ html {
   }
 
   .brand-item {
-    @apply font-semibold text-lg lg:text-2xl text-gray-700 lg:ml-8;
+    @apply font-semibold text-lg lg:text-2xl text-gray-700 lg:ml-8 flex justify-start items-center;
   }
 
   .nav-menu {
@@ -337,7 +337,8 @@ html {
     @apply bg-zinc-800;
   }
 
-  .dark .nav-menu {
+  .dark .nav-menu,
+  .dark .navbar {
     @apply bg-zinc-800 lg:bg-transparent;
   }
 

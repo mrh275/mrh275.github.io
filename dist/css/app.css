@@ -658,6 +658,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -1512,13 +1515,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
-.dark .nav-menu {
+.dark .nav-menu, .dark .navbar {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 1024px) {
-  .dark .nav-menu {
+  .dark .nav-menu, .dark .navbar {
     background-color: transparent;
   }
 }
@@ -1778,12 +1781,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.25rem;
 }
 
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
 .mr-1 {
   margin-right: 0.25rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .mr-10 {
@@ -1820,6 +1823,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-24 {
   margin-bottom: 6rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .block {
@@ -1908,6 +1915,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-auto {
   height: auto;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-4 {
@@ -2690,12 +2701,20 @@ body,
     margin-left: 0px;
   }
 
+  .lg\:ml-8 {
+    margin-left: 2rem;
+  }
+
   .lg\:mr-0 {
     margin-right: 0px;
   }
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:inline {
+    display: inline;
   }
 
   .lg\:flex {
