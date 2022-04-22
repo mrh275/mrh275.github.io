@@ -301,7 +301,7 @@ html {
   }
 
   .form-control {
-    @apply border border-gray-400 rounded-md py-2 px-4 outline-none focus:ring-1 focus:ring-offset-2 focus:ring-offset-[#0099ff] transition-all ease-in-out duration-300;
+    @apply border border-gray-400 rounded-md py-2 px-4 outline-none focus:ring-1 focus:ring-offset-2 focus:ring-offset-[#0099ff] focus:transition-all focus:ease-in-out focus:duration-300;
   }
 
   .loading-send {
