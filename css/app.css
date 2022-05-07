@@ -34,7 +34,7 @@ html {
   /* Navbar */
 
   .navbar {
-    @apply absolute z-10 w-full bottom-0 lg:bottom-auto lg:top-0 bg-transparent transition-all duration-200 shadow-[0_-1px_8px_3px_rgba(0,0,0,0.3)] lg:shadow-none;
+    @apply fixed lg:absolute z-10 w-full bottom-0 lg:bottom-auto lg:top-0 bg-transparent transition-all duration-200 shadow-[0_-1px_8px_3px_rgba(0,0,0,0.3)] lg:shadow-none;
   }
 
   .navbar.fixed-nav {

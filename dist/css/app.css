@@ -586,7 +586,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* Navbar */
 
 .navbar {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   z-index: 10;
   width: 100%;
@@ -600,6 +600,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
+  .navbar {
+    position: absolute;
+  }
+
   .navbar {
     bottom: auto;
   }
@@ -2966,6 +2970,10 @@ body,
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:relative {
     position: relative;
   }
