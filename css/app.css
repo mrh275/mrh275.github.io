@@ -34,7 +34,7 @@ html {
   /* Navbar */
 
   .navbar {
-    @apply absolute z-10 w-full bottom-0 lg:bottom-auto lg:top-0 bg-transparent transition-all duration-200 shadow-[0_0_5px_1px_rgba(0,0,0,0.2);];
+    @apply absolute z-10 w-full bottom-0 lg:bottom-auto lg:top-0 bg-transparent transition-all duration-200 shadow-[0_-1px_8px_3px_rgba(0,0,0,0.3)] lg:shadow-none;
   }
 
   .navbar.fixed-nav {
@@ -61,14 +61,6 @@ html {
     @apply grow w-1/3 my-2;
   }
 
-  .nav-link {
-    @apply block;
-  }
-
-  .nav-link i.bx {
-    @apply text-2xl block lg:hidden;
-  }
-
   /* End Navbar */
 
   /* Toggle Menu */
@@ -92,13 +84,21 @@ html {
   }
 
   .nav-menu.show {
-    @apply translate-y-0;
+    @apply translate-y-0 shadow-[0_-1px_8px_3px_rgba(0,0,0,0.3)] lg:shadow-none;
   }
   /* End Toggle Menu */
 
   /* Menu */
   .nav-link {
-    @apply inline-block font-semibold w-full py-1 px-3 mx-2 text-center hover:text-[#0099ff] transition duration-200 whitespace-nowrap;
+    @apply inline-block font-semibold w-max lg:w-full py-1 lg:px-3 lg:mx-2 text-center hover:text-[#0099ff] transition duration-200 whitespace-nowrap;
+  }
+
+  .nav-link {
+    @apply block mx-auto;
+  }
+
+  .nav-link i.bx {
+    @apply text-2xl block lg:hidden;
   }
 
   .navbar.fixed-nav .nav-menu {
