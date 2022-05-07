@@ -38,7 +38,7 @@
             </a>
           </div>
 
-          <ul class="nav-menu">
+          <ul class="nav-menu show">
             <li class="nav-item">
               <a href="/" class="nav-link">Home</a>
             </li>
@@ -431,7 +431,7 @@
       <div class="toast-progress"></div>
     </div>
 
-    <button class="scroll-top-btn btn-sm btn-primary fixed -bottom-full right-0 mr-10 mb-10"><i class="bx bx-up-arrow-alt"></i></button>
+    <button class="scroll-top-btn btn-sm btn-primary"><i class="bx bx-up-arrow-alt"></i></button>
 
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
@@ -440,7 +440,7 @@
     <script>
       // Greetings Typed.js
       let typed = new Typed("#greet-splash", {
-        strings: ["", "Hi everyone. I'am Dani", "I'm a Full Stack Web Developer", "I create awesome websites", "Feel free to contact me"],
+        strings: ["", "Hi everyone. I'am Dani", "A Full Stack Web Developer", "I create awesome websites", "Feel free to contact me"],
         typeSpeed: 40,
         backSpeed: 40,
         backDelay: 1000,
@@ -461,12 +461,12 @@
         let st = window.pageYOffset;
         if (st > offset) {
           navbar.classList.add("fixed-nav");
-          document.querySelector(".scroll-top-btn").classList.add("bottom-0");
-          document.querySelector(".scroll-top-btn").classList.remove("-bottom-full");
+          document.querySelector(".scroll-top-btn").classList.add("bottom-20");
+          document.querySelector(".scroll-top-btn").classList.remove("-bottom-10");
         } else {
           navbar.classList.remove("fixed-nav");
-          document.querySelector(".scroll-top-btn").classList.remove("bottom-0");
-          document.querySelector(".scroll-top-btn").classList.add("-bottom-full");
+          document.querySelector(".scroll-top-btn").classList.remove("bottom-20");
+          document.querySelector(".scroll-top-btn").classList.add("-bottom-10");
         }
       });
 

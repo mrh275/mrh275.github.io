@@ -27,26 +27,22 @@ html {
 
   /* Card */
   .card-sm {
-    @apply rounded-lg bg-zinc-100 shadow-md w-1/3 lg:w-1/4 p-2 lg:p-4 mx-2 my-2;
+    @apply rounded-lg bg-zinc-200 shadow-md w-1/3 lg:w-1/4 p-2 lg:p-4 mx-2 my-2;
   }
   /* End Card */
 
   /* Navbar */
 
   .navbar {
-    @apply absolute w-full z-50 bg-zinc-100 lg:bg-transparent transition-all duration-200 overflow-x-hidden;
+    @apply absolute w-full z-50 bottom-0 lg:bottom-auto lg:top-0 bg-zinc-100 lg:bg-transparent transition-all duration-200 overflow-x-hidden;
   }
 
   .navbar.fixed-nav {
-    @apply bg-zinc-100;
+    @apply bg-zinc-100 bottom-0 lg:bottom-auto lg:top-0 fixed w-full shadow-md;
   }
 
   .nav-wrapper {
     @apply relative h-12 lg:h-auto pl-4 pr-8 lg:px-8 flex justify-evenly items-center lg:shadow-none z-50;
-  }
-
-  .navbar.fixed-nav {
-    @apply fixed w-full top-0 shadow-md;
   }
 
   .navbar-brand {
@@ -58,7 +54,7 @@ html {
   }
 
   .nav-menu {
-    @apply list-none w-full fixed -translate-y-[120%] top-10 left-0 bg-zinc-100 text-gray-700 py-4 z-40 lg:z-0 lg:w-auto lg:relative lg:translate-y-0 lg:top-0 lg:inline-flex lg:bg-transparent lg:mr-8;
+    @apply list-none w-full fixed -translate-y-[120%] top-10 left-0 bg-zinc-200 text-gray-700 py-4 z-40 lg:z-0 lg:w-auto lg:relative lg:translate-y-0 lg:top-0 lg:inline-flex lg:bg-transparent lg:mr-8;
   }
   /* End Navbar */
 
@@ -141,7 +137,7 @@ html {
 
   /* About Section */
   .about {
-    @apply bg-zinc-100 mx-auto px-8 lg:px-20 py-6;
+    @apply bg-zinc-200 mx-auto px-8 lg:px-20 py-6;
   }
 
   .about-title,
@@ -272,7 +268,7 @@ html {
 
   /* Contact Section */
   .contact {
-    @apply bg-zinc-100 mx-auto px-8 lg:px-20 py-6;
+    @apply bg-zinc-200 mx-auto px-8 lg:px-20 py-6;
   }
 
   .address,
@@ -311,7 +307,7 @@ html {
 
   /* Footer */
   .footer {
-    @apply bg-zinc-200 mx-auto px-8 lg:px-20 py-4;
+    @apply bg-zinc-300 mx-auto px-8 lg:px-20 pt-4 pb-16 lg:pt-4 lg:pb-4;
   }
   /* End Footer */
 
@@ -425,6 +421,12 @@ html {
     @apply content-[''] absolute bottom-0 right-0 h-full w-full bg-emerald-500;
   }
   /* End Toast */
+
+  /* Scroll Top Button */
+  .scroll-top-btn {
+    @apply fixed -bottom-10 right-3 lg:right-10;
+    /* End Scroll Top Button */
+  }
 }
 
 nav.navbar,

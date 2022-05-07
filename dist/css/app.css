@@ -564,7 +564,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 33.333333%;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
   padding: 0.5rem;
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -587,6 +587,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .navbar {
   position: absolute;
+  bottom: 0px;
   z-index: 50;
   width: 100%;
   overflow-x: hidden;
@@ -599,13 +600,37 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 1024px) {
   .navbar {
+    bottom: auto;
+  }
+
+  .navbar {
+    top: 0px;
+  }
+
+  .navbar {
     background-color: transparent;
   }
 }
 
 .navbar.fixed-nav {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 1024px) {
+  .navbar.fixed-nav {
+    bottom: auto;
+  }
+
+  .navbar.fixed-nav {
+    top: 0px;
+  }
 }
 
 .nav-wrapper {
@@ -634,15 +659,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
-}
-
-.navbar.fixed-nav {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .navbar-brand {
@@ -689,7 +705,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   list-style-type: none;
   --tw-bg-opacity: 1;
-  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
   padding-top: 1rem;
   padding-bottom: 1rem;
   --tw-text-opacity: 1;
@@ -987,7 +1003,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
   margin-right: auto;
   --tw-bg-opacity: 1;
-  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1.5rem;
@@ -1339,7 +1355,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
   margin-right: auto;
   --tw-bg-opacity: 1;
-  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1.5rem;
@@ -1461,17 +1477,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
   margin-right: auto;
   --tw-bg-opacity: 1;
-  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 }
 
 @media (min-width: 1024px) {
   .footer {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .footer {
+    padding-top: 1rem;
+  }
+
+  .footer {
+    padding-bottom: 1rem;
   }
 }
 
@@ -1659,6 +1683,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* End Toast */
 
+/* Scroll Top Button */
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: -2.5rem;
+  right: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+  .scroll-top-btn {
+    right: 2.5rem;
+  }
+}
+
+.scroll-top-btn {
+  /* End Scroll Top Button */
+}
+
 .visible {
   visibility: visible;
 }
@@ -1675,20 +1717,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.-bottom-full {
-  bottom: -100%;
+.-bottom-10 {
+  bottom: -2.5rem;
 }
 
-.right-0 {
-  right: 0px;
+.right-3 {
+  right: 0.75rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
 }
 
 .bottom-0 {
   bottom: 0px;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .top-10 {
@@ -1697,6 +1739,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .left-0 {
   left: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .top-16 {
@@ -1715,8 +1761,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 10px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.-bottom-full {
+  bottom: -100%;
+}
+
 .top-6 {
   top: 1.5rem;
+}
+
+.top-full {
+  top: 100%;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.left-full {
+  left: 100%;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.-bottom-20 {
+  bottom: -5rem;
+}
+
+.right-5 {
+  right: 1.25rem;
 }
 
 .z-50 {
@@ -1781,24 +1863,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.25rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
 .ml-1 {
   margin-left: 0.25rem;
 }
 
 .mr-1 {
   margin-right: 0.25rem;
-}
-
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .ml-6 {
@@ -1811,6 +1881,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-4 {
   margin-right: 1rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mr-6 {
@@ -1917,10 +1999,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: auto;
 }
 
-.w-7 {
-  width: 1.75rem;
-}
-
 .w-4 {
   width: 1rem;
 }
@@ -1967,6 +2045,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[25px\] {
   width: 25px;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-12 {
@@ -2212,6 +2294,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 153 255 / var(--tw-bg-opacity));
 }
 
+.bg-zinc-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
 .bg-zinc-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
@@ -2221,9 +2308,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgba(0,0,0,0.7);
 }
 
-.bg-zinc-200 {
+.bg-zinc-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
 }
 
 .bg-zinc-700 {
@@ -2395,6 +2482,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pr-8 {
   padding-right: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .pt-8 {
@@ -2699,6 +2806,14 @@ body,
     position: relative;
   }
 
+  .lg\:right-10 {
+    right: 2.5rem;
+  }
+
+  .lg\:bottom-auto {
+    bottom: auto;
+  }
+
   .lg\:top-0 {
     top: 0px;
   }
@@ -2819,6 +2934,10 @@ body,
 
   .lg\:pb-10 {
     padding-bottom: 2.5rem;
+  }
+
+  .lg\:pt-4 {
+    padding-top: 1rem;
   }
 
   .lg\:text-2xl {
