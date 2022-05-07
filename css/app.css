@@ -176,16 +176,6 @@ html {
     @apply text-justify text-base lg:text-lg text-zinc-800;
   }
 
-  .about-exp {
-    @apply flex justify-between items-center;
-  }
-
-  .about-exp .exp,
-  .project-complete,
-  .client {
-    @apply text-2xl font-semibold text-zinc-700;
-  }
-
   .about-cv {
     @apply py-4 flex justify-center lg:justify-start items-center;
   }

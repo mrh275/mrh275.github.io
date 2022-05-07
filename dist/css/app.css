@@ -1155,20 +1155,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.about-exp {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.about-exp .exp, .project-complete, .client {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(63 63 70 / var(--tw-text-opacity));
-}
-
 .about-cv {
   display: flex;
   align-items: center;
@@ -2747,11 +2733,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 153 255 / var(--tw-text-opacity));
 }
 
-.text-zinc-600 {
-  --tw-text-opacity: 1;
-  color: rgb(82 82 91 / var(--tw-text-opacity));
-}
-
 .text-zinc-700 {
   --tw-text-opacity: 1;
   color: rgb(63 63 70 / var(--tw-text-opacity));
@@ -2775,6 +2756,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-slate-700 {
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.text-zinc-600 {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 91 / var(--tw-text-opacity));
 }
 
 .text-gray-100 {
