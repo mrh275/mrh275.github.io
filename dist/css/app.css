@@ -2997,6 +2997,10 @@ body,
     display: block;
   }
 
+  .lg\:inline-block {
+    display: inline-block;
+  }
+
   .lg\:inline {
     display: inline;
   }
