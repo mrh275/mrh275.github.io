@@ -168,12 +168,12 @@ const graduationGallery = window.lightGallery(graduation, {
     {
       src: "https://muhamadramdani275.github.io/assets/img/project/graduation-announcement/graduation-1.png",
       thumb: "https://muhamadramdani275.github.io/assets/img/project/graduation-announcement/graduation-1.png",
-      subHtml: '<h4>Home - Semesta</h4><a href="https://kelulusan.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
+      subHtml: '<h4>Home - Graduation Announcement</h4><a href="https://kelulusan.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
       src: "https://muhamadramdani275.github.io/assets/img/project/graduation-announcement/graduation-2.png",
       thumb: "https://muhamadramdani275.github.io/assets/img/project/graduation-announcement/graduation-2.png",
-      subHtml: '<h4>Home (Dark Mode) - Semesta</h4><a href="https://kelulusan.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
+      subHtml: '<h4>Announcement Page</h4><a href="https://kelulusan.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
   ],
 });
