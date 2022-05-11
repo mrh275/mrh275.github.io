@@ -35,7 +35,7 @@ function sendMessage() {
     document.querySelector(".invalid-message").innerHTML = "";
 
     // Send message to gmail
-    emailjs.send("service_zw3qqrg", "template_wsm67bd", data).then(function (res) {
+    emailjs.send("service_8nkspk9", "template_szp0van", data).then(function (res) {
       toast.classList.add("toast-active");
       toastProgress.classList.add("active");
 
