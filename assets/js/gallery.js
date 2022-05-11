@@ -153,6 +153,31 @@ const lulusanGallery = window.lightGallery(jejakLulusan, {
   ],
 });
 
+// Semesta
+const graduation = document.getElementById("graduation");
+const graduationGallery = window.lightGallery(graduation, {
+  dynamic: true,
+  plugins: [lgZoom, lgThumbnail],
+  closeable: true,
+  closeOnTap: true,
+  escKey: true,
+  mobileSettings: {
+    showCloseIcon: true,
+  },
+  dynamicEl: [
+    {
+      src: "https://muhamadramdani275.github.io/assets/img/project/graduation-announcement/graduation-1.png",
+      thumb: "https://muhamadramdani275.github.io/assets/img/project/graduation-announcement/graduation-1.png",
+      subHtml: '<h4>Home - Semesta</h4><a href="https://kelulusan.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
+    },
+    {
+      src: "https://muhamadramdani275.github.io/assets/img/project/graduation-announcement/graduation-2.png",
+      thumb: "https://muhamadramdani275.github.io/assets/img/project/graduation-announcement/graduation-2.png",
+      subHtml: '<h4>Home (Dark Mode) - Semesta</h4><a href="https://kelulusan.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
+    },
+  ],
+});
+
 vervalPonsel.addEventListener("click", () => {
   vervalGallery.openGallery();
 });
@@ -163,4 +188,8 @@ semesta.addEventListener("click", () => {
 
 jejakLulusan.addEventListener("click", () => {
   lulusanGallery.openGallery();
+});
+
+graduation.addEventListener("click", () => {
+  graduationGallery.openGallery();
 });
