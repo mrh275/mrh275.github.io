@@ -11,8 +11,8 @@ const vervalGallery = window.lightGallery(vervalPonsel, {
   },
   dynamicEl: [
     {
-      src: "https://muhamadramdani275.github.io/assets/img/project/verval-ponsel.png",
-      thumb: "https://muhamadramdani275.github.io/assets/img/project/verval-ponsel.png",
+      src: "https://muhamadramdani275.github.io/assets/img/project/verval-ponsel-thumb.png",
+      thumb: "https://muhamadramdani275.github.io/assets/img/project/verval-ponsel-thumb.png",
       subHtml: '<h4>Portal - Verval Ponsel</h4><a href="https://vervalponsel.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
