@@ -918,10 +918,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .splash {
   display: flex;
   flex-direction: column-reverse;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -1229,6 +1229,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(0 153 255 / var(--tw-bg-opacity));
+}
+
+.edu-left {
+  margin-left: auto;
 }
 
 .edu-line {
@@ -1928,6 +1932,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1963,6 +1972,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mr-4 {
@@ -2372,10 +2385,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
-.border-transparent {
-  border-color: transparent;
-}
-
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
@@ -2384,6 +2393,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-zinc-600 {
   --tw-border-opacity: 1;
   border-color: rgb(82 82 91 / var(--tw-border-opacity));
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .border-gray-100 {
@@ -2615,6 +2628,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -2641,10 +2658,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-10 {
   padding-bottom: 2.5rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 
 .pt-8 {
@@ -2845,12 +2858,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.duration-200 {
-  transition-duration: 200ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .duration-500 {
@@ -2894,11 +2907,6 @@ body,
   100% {
     right: 100%;
   }
-}
-
-.hover\:translate-y-1:hover {
-  --tw-translate-y: 0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:text-\[\#0099ff\]:hover {
@@ -2985,10 +2993,6 @@ body,
     margin-left: 0px;
   }
 
-  .lg\:ml-8 {
-    margin-left: 2rem;
-  }
-
   .lg\:mr-8 {
     margin-right: 2rem;
   }
@@ -3019,12 +3023,6 @@ body,
 
   .lg\:h-auto {
     height: auto;
-  }
-
-  .lg\:h-min {
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
   }
 
   .lg\:w-2\/4 {
@@ -3060,20 +3058,12 @@ body,
     flex-wrap: nowrap;
   }
 
-  .lg\:justify-start {
-    justify-content: flex-start;
-  }
-
   .lg\:justify-between {
     justify-content: space-between;
   }
 
   .lg\:bg-transparent {
     background-color: transparent;
-  }
-
-  .lg\:p-4 {
-    padding: 1rem;
   }
 
   .lg\:py-0 {
