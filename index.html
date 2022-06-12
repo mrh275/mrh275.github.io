@@ -1,547 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dNezast</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dNezast</title>
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/img/favicon.png" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./dist/css/app.css" />
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/css/app.css" />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <script type="text/javascript">
-      emailjs.init("XT3KiVT00iviSpClX");
-    </script>
-  </head>
-  <body class="overflow-x-hidden">
-    <div class="main-wrapper">
-      <nav class="navbar">
-        <div class="nav-wrapper">
-          <div class="navbar-brand">
-            <a href="/" class="brand-item">
-              <span class="hidden lg:inline">dNezast</span>
-              <span class="lg:hidden">dNezast</span>
-            </a>
-          </div>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="/#" id="nav-home" class="nav-link">
-                <i class="bx bx-grid-alt"></i>
-                <span>Home</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" id="nav-about" class="nav-link">
-                <i class="bx bxs-user"></i>
-                <span>About</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#project" id="nav-project" class="nav-link">
-                <i class="bx bx-devices"></i>
-                <span>Projects</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#skills" id="nav-skill" class="nav-link">
-                <i class="bx bx-code-alt"></i>
-                <span>Skills</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#certificate" id="nav-certificate" class="nav-link">
-                <i class="bx bx-certification"></i>
-                <span>Certificates</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" id="nav-contact" class="nav-link">
-                <i class="bx bxs-contact"></i>
-                <span>Contact Me</span>
-              </a>
-            </li>
-          </ul>
+  <script type="text/javascript">
+    emailjs.init("XT3KiVT00iviSpClX");
+  </script>
+</head>
 
-          <div class="toggle-darkMode" id="toggle-darkMode">
-            <span class="darkMode-btn flex w-4 overflow-x-hidden">
-              <i class="bx bxs-moon text-white"></i>
-              <i class="bx bxs-sun text-yellow-600"></i>
-            </span>
-          </div>
-
-          <div class="toggle-menu absolute">
-            <span class="burger"></span>
-            <span class="burger"></span>
-            <span class="burger"></span>
-          </div>
+<body class="overflow-x-hidden">
+  <div class="main-wrapper">
+    <nav class="navbar">
+      <div class="nav-wrapper">
+        <div class="navbar-brand">
+          <a href="/" class="brand-item">
+            <span class="hidden lg:inline">dNezast</span>
+            <span class="lg:hidden">dNezast</span>
+          </a>
         </div>
-      </nav>
 
-      <div class="main-content after-nav">
-        <div class="container mx-auto pb-8">
-          <div class="splash">
-            <div class="splash-left">
-              <h1 class="greet-splash" id="greet-splash">&nbsp;</h1>
-              <p class="job-desc-splash">Saya adalah seorang Staff Tata Usaha di Sekolah Menengah Atas Negeri (SMAN) di suatu kabupaten di Jawa Barat yang memiliki ketertarikan terhadap Web Developing.</p>
-              <a href="#contact" class="get-in-touch btn btn-primary my-4 inline-flex">Get in touch <i class="bx bx-right-arrow-alt ml-1"></i></a>
-            </div>
-            <div class="splash-right lg:w-2/4 py-6 lg:py-0 relative flex justify-center">
-              <svg class="blob fill-[#0099ff] w-3/4" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="/#" id="nav-home" class="nav-link">
+              <i class="bx bx-grid-alt"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" id="nav-about" class="nav-link">
+              <i class="bx bxs-user"></i>
+              <span>About</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#project" id="nav-project" class="nav-link">
+              <i class="bx bx-devices"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" id="nav-skill" class="nav-link">
+              <i class="bx bx-code-alt"></i>
+              <span>Skills</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#certificate" id="nav-certificate" class="nav-link">
+              <i class="bx bx-certification"></i>
+              <span>Certificates</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" id="nav-contact" class="nav-link">
+              <i class="bx bxs-contact"></i>
+              <span>Contact Me</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="toggle-darkMode" id="toggle-darkMode">
+          <span class="flex w-4 overflow-x-hidden darkMode-btn">
+            <i class="text-white bx bxs-moon"></i>
+            <i class="text-yellow-600 bx bxs-sun"></i>
+          </span>
+        </div>
+
+        <div class="absolute toggle-menu">
+          <span class="burger"></span>
+          <span class="burger"></span>
+          <span class="burger"></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-content after-nav">
+      <div class="container pb-8 mx-auto">
+        <div class="splash">
+          <div class="splash-left">
+            <h1 class="greet-splash" id="greet-splash">&nbsp;</h1>
+            <p class="job-desc-splash">I'm a Full Stack Web Developer. I have passion for building and developing websites. I have more than 1 year as a Web Developer.</p>
+            <a href="#contact" class="inline-flex my-4 get-in-touch btn btn-primary">Get in touch <i class="ml-1 bx bx-right-arrow-alt"></i></a>
+          </div>
+          <div class="relative flex justify-center py-6 splash-right lg:w-2/4 lg:py-0">
+            <svg class="blob fill-[#0099ff] w-3/4" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0" mask-type="alpha">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+              </mask>
+              <g mask="url(#mask0)">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image class="home__blob-img" x="29" y="18" href="./assets/img/profile.png" style="width: 150px" />
-                </g>
-              </svg>
-            </div>
-          </div>
-          <div class="scroll-down">
-            <a href="#about" class="scroll-down-btn"><i class="bx bx-mouse text-4xl text-[#0099ff]"></i> Scroll Down <i class="bx bx-down-arrow-alt arrow-bawah text-xl text-[#0099ff]"></i></a>
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                <image class="home__blob-img" x="29" y="18" href="./assets/img/profile.png" style="width: 150px" />
+              </g>
+            </svg>
           </div>
         </div>
-
-        <div class="about" id="about">
-          <h2 class="about-title">About Me</h2>
-          <div class="about-section">
-            <div class="card">
-              <div class="card-header">
-                <img src="./assets/img/my-about.jpg" alt="About Me Images" class="about-img" />
-              </div>
-              <div class="lg:w-2/4 lg:pr-28">
-                <div class="card-body py-4">
-                  <p class="about-desc">
-                    Halo semua👋 Nama saya Muhamad Ramdani Hidayatullah. Saya adalah seorang Full Stack Web Developer dan juga seorang Staff Tata Usaha di sebuah Sekolah Menengah Atas Negeri (SMAN) di suatu kabupaten di Jawa Barat. Saya ditugaskan
-                    untuk mengelola data siswa, guru, tata usaha, sarpras dll pada aplikasi yang bernama Dapodik (Data Pokok Pendidikan) dan juga saya menjadi developer web untuk sekolah tempat saya bekerja. Saya belajar Web Developing secara
-                    otodidak sejak kelas 11 SMA dan akhirnya memilih untuk mengambil pendidikan lanjutan S1 Teknik Informatika di Kampus Swasta di Karawang.
-                  </p>
-                </div>
-                <div class="card-footer py-4">
-                  <div class="about-cv">
-                    <a href="#" class="btn btn-primary"><i class="bx bx-download"></i>&nbsp; Download CV</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Personal Journey -->
-            <div class="journey-wrapper">
-              <h2 class="journey-title">My Personal Journey</h2>
-              <!-- Journey Tabs -->
-              <div class="journey-tab">
-                <div class="edu-tab mx-4">
-                  <button class="edu-btn active"><i class="bx bxs-graduation"></i> Education</button>
-                </div>
-                <div class="work-tab mx-4">
-                  <button class="work-btn"><i class="bx bx-briefcase"></i> Work</button>
-                </div>
-              </div>
-              <!-- End Journey Tabs -->
-
-              <div class="journey-tabs-wrapper">
-                <!-- Journey Edu Section -->
-                <!-- Elementary School -->
-                <div class="edu-tabs-section" id="edu-tabs-section">
-                  <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
-                    <div class="edu-left">
-                      <h4 class="edu-school">SD Negeri 4 Jatisari</h4>
-                      <small class="text-zinc-700 text-xs"><i class="bx bx-calendar-check"></i> 2003 - 2009</small>
-                    </div>
-                    <div class="edu-middle relative">
-                      <span class="edu-round"></span>
-                      <span class="edu-line"></span>
-                    </div>
-                    <div class="edu-right"></div>
-                  </div>
-                  <!-- Junior High School -->
-                  <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
-                    <div class="edu-left"></div>
-                    <div class="edu-middle relative">
-                      <span class="edu-round"></span>
-                      <span class="edu-line"></span>
-                    </div>
-                    <div class="edu-right">
-                      <h4 class="edu-school">MTs Negeri Jatisari</h4>
-                      <small class="text-zinc-700 text-xs"><i class="bx bx-calendar-check"></i> 2009 - 2012</small>
-                    </div>
-                  </div>
-                  <!-- Senior High School -->
-                  <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
-                    <div class="edu-left">
-                      <h4 class="edu-school">SMA Negeri 1 Jatisari</h4>
-                      <small class="block text-zinc-700">Jurusan IPA</small>
-                      <small class="text-zinc-700 text-xs"><i class="bx bx-calendar-check"></i> 2012 - 2015</small>
-                    </div>
-                    <div class="edu-middle relative">
-                      <span class="edu-round"></span>
-                      <span class="edu-line"></span>
-                    </div>
-                    <div class="edu-right"></div>
-                  </div>
-                  <!-- College -->
-                  <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
-                    <div class="edu-left"></div>
-                    <div class="edu-middle relative">
-                      <span class="edu-round"></span>
-                    </div>
-                    <div class="edu-right">
-                      <h4 class="edu-school">STMIK Rosma Karawang</h4>
-                      <small class="block text-zinc-700">Teknik Informatika</small>
-                      <small class="text-zinc-700 text-xs"><i class="bx bx-calendar"></i> 2020 - Now</small>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Journey Edu -->
-
-                <!-- Journey Work Section -->
-                <div class="work-tabs-section hidden" id="work-tabs-section">
-                  <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
-                    <div class="edu-left">
-                      <h4 class="edu-school">SMAN 1 Banyusari</h4>
-                      <small class="block text-zinc-700">Staff Tata Usaha</small>
-                      <small class="text-zinc-700 text-xs"><i class="bx bx-calendar-check"></i> 2015 - 2017</small>
-                    </div>
-                    <div class="edu-middle relative">
-                      <span class="edu-round"></span>
-                      <span class="edu-line"></span>
-                    </div>
-                    <div class="edu-right"></div>
-                  </div>
-                  <!-- Junior High School -->
-                  <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
-                    <div class="edu-left"></div>
-                    <div class="edu-middle relative">
-                      <span class="edu-round"></span>
-                      <span class="edu-line"></span>
-                    </div>
-                    <div class="edu-right">
-                      <h4 class="edu-school">SMAN 1 Jatisari</h4>
-                      <small class="block text-zinc-700">Staff Keuangan</small>
-                      <small class="text-zinc-700 text-xs"><i class="bx bx-calendar-check"></i> 2017 - 2019</small>
-                    </div>
-                  </div>
-                  <!-- Senior High School -->
-                  <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
-                    <div class="edu-left">
-                      <h4 class="edu-school">PT. Multi Indo Mandiri</h4>
-                      <small class="block text-zinc-700">Staff Admin Gudang</small>
-                      <small class="text-zinc-700 text-xs"><i class="bx bx-calendar-check"></i> 2019 - 2020</small>
-                    </div>
-                    <div class="edu-middle relative">
-                      <span class="edu-round"></span>
-                      <span class="edu-line"></span>
-                    </div>
-                    <div class="edu-right"></div>
-                  </div>
-                  <!-- College -->
-                  <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
-                    <div class="edu-left"></div>
-                    <div class="edu-middle relative">
-                      <span class="edu-round"></span>
-                    </div>
-                    <div class="edu-right">
-                      <h4 class="edu-school">SMAN 1 Rawamerta</h4>
-                      <small class="block text-zinc-700">- Operator Dapodik</small>
-                      <small class="block text-zinc-700">- Web Developer</small>
-                      <small class="text-zinc-700 text-xs"><i class="bx bx-calendar"></i> 2020 - Now</small>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Journey Work -->
-              </div>
-            </div>
-            <!-- End Personal Journey -->
-          </div>
+        <div class="scroll-down">
+          <a href="#about" class="scroll-down-btn"><i class="bx bx-mouse text-4xl text-[#0099ff]"></i> Scroll Down <i class="bx bx-down-arrow-alt arrow-bawah text-xl text-[#0099ff]"></i></a>
         </div>
       </div>
 
-      <!-- Project Section -->
-      <div class="project" id="project">
-        <h2 class="project-section-title">Project</h2>
+      <div class="about" id="about">
+        <h2 class="about-title">About Me</h2>
+        <div class="about-section">
+          <div class="card">
+            <div class="card-header">
+              <img src="./assets/img/my-about.jpg" alt="About Me Images" class="about-img" />
+            </div>
+            <div class="lg:w-2/4 lg:pr-28">
+              <div class="py-4 card-body">
+                <p class="about-desc">
+                  Hello everyone👋 My name is Muhamad Ramdani Hidayatullah, but you can call me Dani. I'am a Full Stack Web Developer with a passion for building and developing websites. I have more than 1 year as a Web Developer and now I'm working as Web Developer at one of the school somewhere at West Java, Indonesia.
+                </p>
+              </div>
+              <div class="py-4 card-footer">
+                <div class="about-cv">
+                  <a href="/assets/cv/Muhamad-Ramdani-Hidayatullah.pdf" class="btn btn-primary"><i class="bx bx-download"></i>&nbsp; Download CV</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <!-- Project Wrapper -->
-        <div class="project-wrapper">
-          <!-- Project Thumb -->
-          <div class="card-sm">
-            <div class="card-body">
-              <a href="javascript:void(0)" class="project-thumb" id="vervalPonsel">
-                <img src="./assets/img/project/verval-ponsel-thumb.png" class="rounded-md" alt="Project" />
-                <div class="project-title">
-                  <span class="text-project">Verval Ponsel</span>
-                  <p class="project-desc">Aplikasi pendataan nomor ponsel siswa untuk melakukan verifikasi dan validasi keaktifan nomor ponsel siswa.</p>
+          <!-- Personal Journey -->
+          <div class="journey-wrapper">
+            <h2 class="journey-title">My Personal Journey</h2>
+            <!-- Journey Tabs -->
+            <div class="journey-tab">
+              <div class="mx-4 edu-tab">
+                <button class="edu-btn active"><i class="bx bxs-graduation"></i> Education</button>
+              </div>
+              <div class="mx-4 work-tab">
+                <button class="work-btn"><i class="bx bx-briefcase"></i> Work</button>
+              </div>
+            </div>
+            <!-- End Journey Tabs -->
+
+            <div class="journey-tabs-wrapper">
+              <!-- Journey Edu Section -->
+              <!-- Elementary School -->
+              <div class="edu-tabs-section" id="edu-tabs-section">
+                <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
+                  <div class="edu-left">
+                    <h4 class="edu-school">4th Public Primary School of Jatisari</h4>
+                    <small class="text-xs text-zinc-700"><i class="bx bx-calendar-check"></i> 2003 - 2009</small>
+                  </div>
+                  <div class="relative edu-middle">
+                    <span class="edu-round"></span>
+                    <span class="edu-line"></span>
+                  </div>
+                  <div class="edu-right"></div>
                 </div>
-              </a>
+                <!-- Junior High School -->
+                <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
+                  <div class="edu-left"></div>
+                  <div class="relative edu-middle">
+                    <span class="edu-round"></span>
+                    <span class="edu-line"></span>
+                  </div>
+                  <div class="edu-right">
+                    <h4 class="edu-school">Public Islamic School of Jatisari</h4>
+                    <small class="text-xs text-zinc-700"><i class="bx bx-calendar-check"></i> 2009 - 2012</small>
+                  </div>
+                </div>
+                <!-- Senior High School -->
+                <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
+                  <div class="edu-left">
+                    <h4 class="edu-school">Senior High School 1 Jatisari</h4>
+                    <small class="block text-zinc-700">Jurusan IPA</small>
+                    <small class="text-xs text-zinc-700"><i class="bx bx-calendar-check"></i> 2012 - 2015</small>
+                  </div>
+                  <div class="relative edu-middle">
+                    <span class="edu-round"></span>
+                    <span class="edu-line"></span>
+                  </div>
+                  <div class="edu-right"></div>
+                </div>
+                <!-- College -->
+                <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
+                  <div class="edu-left"></div>
+                  <div class="relative edu-middle">
+                    <span class="edu-round"></span>
+                  </div>
+                  <div class="edu-right">
+                    <h4 class="hidden edu-school lg:block">School of Management and Computer Science Rosma Karawang</h4>
+                    <h4 class="block edu-school lg:hidden">SMCS Rosma Karawang</h4>
+                    <small class="block text-zinc-700">Teknik Informatika</small>
+                    <small class="text-xs text-zinc-700"><i class="bx bx-calendar"></i> 2020 - Now</small>
+                  </div>
+                </div>
+              </div>
+              <!-- End Journey Edu -->
+
+              <!-- Journey Work Section -->
+              <div class="hidden work-tabs-section" id="work-tabs-section">
+                <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
+                  <div class="edu-left">
+                    <h4 class="edu-school">SMAN 1 Banyusari</h4>
+                    <small class="block text-zinc-700">Staff Tata Usaha</small>
+                    <small class="text-xs text-zinc-700"><i class="bx bx-calendar-check"></i> 2015 - 2017</small>
+                  </div>
+                  <div class="relative edu-middle">
+                    <span class="edu-round"></span>
+                    <span class="edu-line"></span>
+                  </div>
+                  <div class="edu-right"></div>
+                </div>
+                <!-- Junior High School -->
+                <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
+                  <div class="edu-left"></div>
+                  <div class="relative edu-middle">
+                    <span class="edu-round"></span>
+                    <span class="edu-line"></span>
+                  </div>
+                  <div class="edu-right">
+                    <h4 class="edu-school">SMAN 1 Jatisari</h4>
+                    <small class="block text-zinc-700">Staff Keuangan</small>
+                    <small class="text-xs text-zinc-700"><i class="bx bx-calendar-check"></i> 2017 - 2019</small>
+                  </div>
+                </div>
+                <!-- Senior High School -->
+                <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
+                  <div class="edu-left">
+                    <h4 class="edu-school">PT. Multi Indo Mandiri</h4>
+                    <small class="block text-zinc-700">Staff Admin Gudang</small>
+                    <small class="text-xs text-zinc-700"><i class="bx bx-calendar-check"></i> 2019 - 2020</small>
+                  </div>
+                  <div class="relative edu-middle">
+                    <span class="edu-round"></span>
+                    <span class="edu-line"></span>
+                  </div>
+                  <div class="edu-right"></div>
+                </div>
+                <!-- College -->
+                <div class="journey-edu-wrapper" style="grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem">
+                  <div class="edu-left"></div>
+                  <div class="relative edu-middle">
+                    <span class="edu-round"></span>
+                  </div>
+                  <div class="edu-right">
+                    <h4 class="edu-school">SMAN 1 Rawamerta</h4>
+                    <small class="block text-zinc-700">- Operator Dapodik</small>
+                    <small class="block text-zinc-700">- Web Developer</small>
+                    <small class="text-xs text-zinc-700"><i class="bx bx-calendar"></i> 2020 - Now</small>
+                  </div>
+                </div>
+              </div>
+              <!-- End Journey Work -->
             </div>
           </div>
-          <!-- End Project Thumb -->
-          <!-- Project Thumb -->
-          <div class="card-sm">
-            <div class="card-body">
-              <a href="javascript:void(0)" class="project-thumb" id="semesta">
-                <img src="./assets/img/project/semesta-thumb.png" class="rounded-md" alt="Project" />
-                <div class="project-title">
-                  <span class="text-project">Semesta</span>
-                  <p class="project-desc">Aplikasi Website Sekolah untuk membuat postingan atau artikel yang berkaitan dengan informasi sekolah.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- End Project Thumb -->
-          <!-- Project Thumb -->
-          <div class="card-sm">
-            <div class="card-body">
-              <a href="javascript:void(0)" class="project-thumb" id="jejakLulusan">
-                <img src="./assets/img/project/jejak-lulusan-thumb.png" class="rounded-md" alt="Project" />
-                <div class="project-title">
-                  <span class="text-project">Jejak Lulusan</span>
-                  <p class="project-desc">Aplikasi pendataan alumni untuk mengetahui jejak kelulusan alumni yang kuliah dan bekerja.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- End Project Thumb -->
-          <!-- Project Thumb -->
-          <div class="card-sm">
-            <div class="card-body">
-              <a href="javascript:void(0)" class="project-thumb" id="graduation">
-                <img src="./assets/img/project/graduation-thumb.png" class="rounded-md" alt="Project" />
-                <div class="project-title">
-                  <span class="text-project hidden lg:inline-block">Graduation Announcement</span>
-                  <span class="text-project lg:hidden">Graduation</span>
-                  <p class="project-desc">Aplikasi pengumuman kelulusan untuk mengetahui apakah peserta didik lulus atau tidak.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- End Project Thumb -->
+          <!-- End Personal Journey -->
         </div>
       </div>
-      <!-- End Project Section -->
-
-      <!-- Skills Section -->
-      <div class="skills py-16" id="skills">
-        <h2 class="skills-title-section">My Skills</h2>
-        <div class="skills-wrapper flex flex-wrap justify-center items-center px-16">
-          <div class="skills-1 w-full flex justify-evenly items-center my-2">
-            <img src="./assets/img/skills/html.png" alt="html" class="w-8 h-min html" data-aos="fade-right" />
-            <img src="./assets/img/skills/css.png" alt="css" class="w-8 h-min css" data-aos="fade-down-left" />
-            <img src="./assets/img/skills/js.png" alt="js" class="w-8 h-min js" data-aos="fade-down-left" />
-            <img src="./assets/img/skills/bootstrap.png" alt="bootstrap" class="w-10 h-min bootstrap" data-aos="fade-down-right" />
-            <img src="./assets/img/skills/tailwind.png" alt="tailwind" class="w-10 h-min tailwind" data-aos="fade-down-left" />
-            <img src="./assets/img/skills/php.png" alt="php" class="w-10 h-min php" data-aos="fade-left" />
-          </div>
-          <div class="skills-2 w-full flex justify-evenly items-center my-2">
-            <img src="./assets/img/skills/codeigniter.png" alt="codeigniter" class="w-8 h-min ci" data-aos="fade-right" />
-            <img src="./assets/img/skills/laravel.png" alt="laravel" class="w-8 h-min laravel" data-aos="fade-up-right" />
-            <img src="./assets/img/skills/mysql.png" alt="mysql" class="w-10 h-min mysql" data-aos="fade-up-left" />
-            <img src="./assets/img/skills/photoshop.png" alt="photoshop" class="w-8 h-min photoshop" data-aos="fade-up-right" />
-            <img src="./assets/img/skills/android-studio.png" alt="android-studio" class="w-10 h-min android-studio" data-aos="fade-up-left" />
-            <img src="./assets/img/skills/flutter.png" alt="flutter" class="w-8 h-min flutter" data-aos="fade-left" />
-          </div>
-        </div>
-      </div>
-      <!-- End Skills Section -->
-
-      <!-- Contact Section -->
-      <div class="contact" id="contact">
-        <h2 class="contact-title-section">Contact Me</h2>
-        <div class="contact-wrapper flex flex-col-reverse lg:flex-row">
-          <div class="address">
-            <h3 class="address-title">My Address</h3>
-            <div class="address-wrapper flex flex-row">
-              <div class="address-icon">
-                <i class="bx bx-map"></i>
-              </div>
-              <div class="address-content">
-                <p class="text-zinc-700 text-sm">Jl. Raya Jatisari - Sukamaju 2 RT. 01 RW. 04 Ds. Jatisari Kec. Jatisari Kab. Karawang - Jawa Barat, 41374</p>
-              </div>
-            </div>
-            <div class="address-wrapper flex flex-row">
-              <div class="address-icon">
-                <i class="bx bx-phone"></i>
-              </div>
-              <div class="address-content">
-                <p class="text-zinc-700 text-sm">+62 811-XXXX-XXXX</p>
-              </div>
-            </div>
-            <div class="address-wrapper flex flex-row">
-              <div class="address-icon">
-                <i class="bx bx-envelope"></i>
-              </div>
-              <div class="address-content">
-                <p class="text-zinc-700 text-sm">mail@muhamadramdani.my.id</p>
-              </div>
-            </div>
-            <div class="address-wrapper flex flex-row">
-              <div class="address-icon">
-                <i class="bx bxl-github"></i>
-              </div>
-              <div class="address-content">
-                <a href="https://github.com/muhamadramdani275" target="_blank" class="text-zinc-700 text-sm">https://github.com/muhamadramdani275</a>
-              </div>
-            </div>
-          </div>
-          <div class="contact-form-wrapper">
-            <form method="post">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" />
-                <small class="invalid-name text-red-500"></small>
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" />
-                <small class="invalid-email text-red-500"></small>
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
-                <small class="invalid-message text-red-500"></small>
-              </div>
-              <div class="form-group md:block">
-                <button type="button" onclick="sendMessage()" class="btn-sm btn-primary btn-send"><i class="bx bx-paper-plane mr-1"></i> Send Message</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- End Contact Section -->
-
-      <!-- Footer -->
-      <footer class="footer flex flex-col lg:flex-row justify-between items-center text-center">
-        <div class="footer-left">Copyright ©️ <span class="date-now"></span> dNezast. All Right Reserved.</div>
-        <div class="footer-right">Made with ❤️ by Muhamad Ramdani Hidayatullah</div>
-      </footer>
-      <!-- End Footer -->
-    </div>
-    <div class="toast">
-      <div class="toast-content">
-        <i class="fa fa-check toast-check"></i>
-        <div class="toast-message">
-          <span class="toast-title">Success!</span>
-          <span class="toast-text">Your message has been sent</span>
-        </div>
-      </div>
-      <i class="fa fa-times toast-close"></i>
-      <div class="toast-progress"></div>
     </div>
 
-    <button class="scroll-top-btn btn-sm btn-primary"><i class="bx bx-up-arrow-alt"></i></button>
+    <!-- Project Section -->
+    <div class="project" id="project">
+      <h2 class="project-section-title">Project</h2>
 
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      // Greetings Typed.js
-      let typed = new Typed("#greet-splash", {
-        strings: ["", "Hi everyone. I'am Dani", "A Full Stack Web Developer", "I create awesome websites", "Feel free to contact me"],
-        typeSpeed: 40,
-        backSpeed: 40,
-        backDelay: 1000,
-        smartBackspace: true,
-        loop: true,
+      <!-- Project Wrapper -->
+      <div class="project-wrapper">
+        <!-- Project Thumb -->
+        <div class="card-sm">
+          <div class="card-body">
+            <a href="javascript:void(0)" class="project-thumb" id="vervalPonsel">
+              <img src="./assets/img/project/verval-ponsel-thumb.png" class="rounded-md" alt="Project" />
+              <div class="project-title">
+                <span class="text-project">Verval Ponsel</span>
+                <p class="project-desc">Aplikasi pendataan nomor ponsel siswa untuk melakukan verifikasi dan validasi keaktifan nomor ponsel siswa.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Project Thumb -->
+        <!-- Project Thumb -->
+        <div class="card-sm">
+          <div class="card-body">
+            <a href="javascript:void(0)" class="project-thumb" id="semesta">
+              <img src="./assets/img/project/semesta-thumb.png" class="rounded-md" alt="Project" />
+              <div class="project-title">
+                <span class="text-project">Semesta</span>
+                <p class="project-desc">Aplikasi Website Sekolah untuk membuat postingan atau artikel yang berkaitan dengan informasi sekolah.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Project Thumb -->
+        <!-- Project Thumb -->
+        <div class="card-sm">
+          <div class="card-body">
+            <a href="javascript:void(0)" class="project-thumb" id="jejakLulusan">
+              <img src="./assets/img/project/jejak-lulusan-thumb.png" class="rounded-md" alt="Project" />
+              <div class="project-title">
+                <span class="text-project">Jejak Lulusan</span>
+                <p class="project-desc">Aplikasi pendataan alumni untuk mengetahui jejak kelulusan alumni yang kuliah dan bekerja.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Project Thumb -->
+        <!-- Project Thumb -->
+        <div class="card-sm">
+          <div class="card-body">
+            <a href="javascript:void(0)" class="project-thumb" id="graduation">
+              <img src="./assets/img/project/graduation-thumb.png" class="rounded-md" alt="Project" />
+              <div class="project-title">
+                <span class="hidden text-project lg:inline-block">Graduation Announcement</span>
+                <span class="text-project lg:hidden">Graduation</span>
+                <p class="project-desc">Aplikasi pengumuman kelulusan untuk mengetahui apakah peserta didik lulus atau tidak.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Project Thumb -->
+      </div>
+    </div>
+    <!-- End Project Section -->
+
+    <!-- Skills Section -->
+    <div class="py-16 skills" id="skills">
+      <h2 class="skills-title-section">My Skills</h2>
+      <div class="flex flex-wrap items-center justify-center px-16 skills-wrapper">
+        <div class="flex items-center w-full my-2 skills-1 justify-evenly">
+          <img src="./assets/img/skills/html.png" alt="html" class="w-8 h-min html" data-aos="fade-right" />
+          <img src="./assets/img/skills/css.png" alt="css" class="w-8 h-min css" data-aos="fade-down-left" />
+          <img src="./assets/img/skills/js.png" alt="js" class="w-8 h-min js" data-aos="fade-down-left" />
+          <img src="./assets/img/skills/bootstrap.png" alt="bootstrap" class="w-10 h-min bootstrap" data-aos="fade-down-right" />
+          <img src="./assets/img/skills/tailwind.png" alt="tailwind" class="w-10 h-min tailwind" data-aos="fade-down-left" />
+          <img src="./assets/img/skills/php.png" alt="php" class="w-10 h-min php" data-aos="fade-left" />
+        </div>
+        <div class="flex items-center w-full my-2 skills-2 justify-evenly">
+          <img src="./assets/img/skills/codeigniter.png" alt="codeigniter" class="w-8 h-min ci" data-aos="fade-right" />
+          <img src="./assets/img/skills/laravel.png" alt="laravel" class="w-8 h-min laravel" data-aos="fade-up-right" />
+          <img src="./assets/img/skills/mysql.png" alt="mysql" class="w-10 h-min mysql" data-aos="fade-up-left" />
+          <img src="./assets/img/skills/photoshop.png" alt="photoshop" class="w-8 h-min photoshop" data-aos="fade-up-right" />
+          <img src="./assets/img/skills/android-studio.png" alt="android-studio" class="w-10 h-min android-studio" data-aos="fade-up-left" />
+          <img src="./assets/img/skills/flutter.png" alt="flutter" class="w-8 h-min flutter" data-aos="fade-left" />
+        </div>
+      </div>
+    </div>
+    <!-- End Skills Section -->
+
+    <!-- Contact Section -->
+    <div class="contact" id="contact">
+      <h2 class="contact-title-section">Contact Me</h2>
+      <div class="flex flex-col-reverse contact-wrapper lg:flex-row">
+        <div class="address">
+          <h3 class="address-title">My Address</h3>
+          <div class="flex flex-row address-wrapper">
+            <div class="address-icon">
+              <i class="bx bx-map"></i>
+            </div>
+            <div class="address-content">
+              <p class="text-sm text-zinc-700">Karawang, West Java - Indonesia, 41374</p>
+            </div>
+          </div>
+
+          <div class="flex flex-row address-wrapper">
+            <div class="address-icon">
+              <i class="bx bx-envelope"></i>
+            </div>
+            <div class="address-content">
+              <p class="text-sm text-zinc-700">muhamadramdani.h275@gmail.com</p>
+            </div>
+          </div>
+          <div class="flex flex-row address-wrapper">
+            <div class="address-icon">
+              <i class="bx bxl-github"></i>
+            </div>
+            <div class="address-content">
+              <a href="https://github.com/muhamadramdani275" target="_blank" class="text-sm text-zinc-700">https://github.com/muhamadramdani275</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" />
+              <small class="text-red-500 invalid-name"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" />
+              <small class="text-red-500 invalid-email"></small>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
+              <small class="text-red-500 invalid-message"></small>
+            </div>
+            <div class="form-group md:block">
+              <button type="button" onclick="sendMessage()" class="btn-sm btn-primary btn-send"><i class="mr-1 bx bx-paper-plane"></i> Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <footer class="flex flex-col items-center justify-between text-center footer lg:flex-row">
+      <div class="footer-left">Copyright ©️ <span class="date-now"></span> dNezast. All Right Reserved.</div>
+      <div class="footer-right">Made with ❤️ by Muhamad Ramdani Hidayatullah</div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+  <div class="toast">
+    <div class="toast-content">
+      <i class="fa fa-check toast-check"></i>
+      <div class="toast-message">
+        <span class="toast-title">Success!</span>
+        <span class="toast-text">Your message has been sent</span>
+      </div>
+    </div>
+    <i class="fa fa-times toast-close"></i>
+    <div class="toast-progress"></div>
+  </div>
+
+  <button class="scroll-top-btn btn-sm btn-primary"><i class="bx bx-up-arrow-alt"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Greetings Typed.js
+    let typed = new Typed("#greet-splash", {
+      strings: ["", "Hi everyone. I'am Dani", "A Full Stack Web Developer", "I create awesome websites", "Feel free to contact me"],
+      typeSpeed: 40,
+      backSpeed: 40,
+      backDelay: 1000,
+      smartBackspace: true,
+      loop: true,
+    });
+
+    // Toggle dark mode
+    const toggleSwitch = document.querySelector("#toggle-darkMode");
+    toggleSwitch.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+
+    // Navbar Animation on Scroll
+    let navbar = document.querySelector(".navbar");
+    let offset = 0;
+    window.addEventListener("scroll", function () {
+      let st = window.pageYOffset;
+      if (st > offset) {
+        navbar.classList.add("fixed-nav");
+        document.querySelector(".scroll-top-btn").classList.add("bottom-20");
+        document.querySelector(".scroll-top-btn").classList.remove("-bottom-10");
+      } else {
+        navbar.classList.remove("fixed-nav");
+        document.querySelector(".scroll-top-btn").classList.remove("bottom-20");
+        document.querySelector(".scroll-top-btn").classList.add("-bottom-10");
+      }
+    });
+
+    // Toggle Menu
+    let hMenu = document.querySelector(".toggle-menu");
+    hMenu.addEventListener("click", function () {
+      if (!hMenu.classList.contains("show")) {
+        this.classList.add("show");
+        document.querySelector(".nav-menu").classList.add("show");
+      } else {
+        this.classList.remove("show");
+        document.querySelector(".nav-menu").classList.remove("show");
+      }
+    });
+
+    // Journey Tabs
+    let eduBtn = document.querySelector(".edu-btn"),
+      workBtn = document.querySelector(".work-btn");
+
+    eduBtn.addEventListener("click", function () {
+      eduBtn.classList.add("active");
+      workBtn.classList.remove("active");
+      document.querySelector("#edu-tabs-section").classList.remove("hidden");
+      document.querySelector("#work-tabs-section").classList.add("hidden");
+    });
+
+    workBtn.addEventListener("click", function () {
+      workBtn.classList.add("active");
+      eduBtn.classList.remove("active");
+      document.querySelector("#work-tabs-section").classList.remove("hidden");
+      document.querySelector("#edu-tabs-section").classList.add("hidden");
+    });
+
+    // Scroll to top
+    let scrollTopBtn = document.querySelector(".scroll-top-btn");
+    scrollTopBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
+    });
 
-      // Toggle dark mode
-      const toggleSwitch = document.querySelector("#toggle-darkMode");
-      toggleSwitch.addEventListener("click", () => {
-        document.body.classList.toggle("dark");
-      });
+    AOS.init({
+      disable: "mobile",
+      duration: 800,
+    });
 
-      // Navbar Animation on Scroll
-      let navbar = document.querySelector(".navbar");
-      let offset = 0;
-      window.addEventListener("scroll", function () {
-        let st = window.pageYOffset;
-        if (st > offset) {
-          navbar.classList.add("fixed-nav");
-          document.querySelector(".scroll-top-btn").classList.add("bottom-20");
-          document.querySelector(".scroll-top-btn").classList.remove("-bottom-10");
-        } else {
-          navbar.classList.remove("fixed-nav");
-          document.querySelector(".scroll-top-btn").classList.remove("bottom-20");
-          document.querySelector(".scroll-top-btn").classList.add("-bottom-10");
-        }
-      });
+    let dateEl = document.querySelector(".date-now"),
+      today = new Date(),
+      year = today.getFullYear();
+    today = year;
+    dateEl.innerHTML = today;
+  </script>
+  <script src="./assets/js/gallery.js"></script>
+  <script src="./assets/js/message.js"></script>
+</body>
 
-      // Toggle Menu
-      let hMenu = document.querySelector(".toggle-menu");
-      hMenu.addEventListener("click", function () {
-        if (!hMenu.classList.contains("show")) {
-          this.classList.add("show");
-          document.querySelector(".nav-menu").classList.add("show");
-        } else {
-          this.classList.remove("show");
-          document.querySelector(".nav-menu").classList.remove("show");
-        }
-      });
-
-      // Journey Tabs
-      let eduBtn = document.querySelector(".edu-btn"),
-        workBtn = document.querySelector(".work-btn");
-
-      eduBtn.addEventListener("click", function () {
-        eduBtn.classList.add("active");
-        workBtn.classList.remove("active");
-        document.querySelector("#edu-tabs-section").classList.remove("hidden");
-        document.querySelector("#work-tabs-section").classList.add("hidden");
-      });
-
-      workBtn.addEventListener("click", function () {
-        workBtn.classList.add("active");
-        eduBtn.classList.remove("active");
-        document.querySelector("#work-tabs-section").classList.remove("hidden");
-        document.querySelector("#edu-tabs-section").classList.add("hidden");
-      });
-
-      // Scroll to top
-      let scrollTopBtn = document.querySelector(".scroll-top-btn");
-      scrollTopBtn.addEventListener("click", function () {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
-
-      AOS.init({
-        disable: "mobile",
-        duration: 800,
-      });
-
-      let dateEl = document.querySelector(".date-now"),
-        today = new Date(),
-        year = today.getFullYear();
-      today = year;
-      dateEl.innerHTML = today;
-    </script>
-    <script src="./assets/js/gallery.js"></script>
-    <script src="./assets/js/message.js"></script>
-  </body>
 </html>
