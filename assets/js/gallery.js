@@ -11,38 +11,38 @@ const vervalGallery = window.lightGallery(vervalPonsel, {
   },
   dynamicEl: [
     {
-      src: "https://mrh275.github.io/assets/img/project/verval-ponsel-thumb.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/verval-ponsel-thumb.webp",
+      src: "assets/img/project/verval-ponsel-thumb.webp",
+      thumb: "assets/img/project/verval-ponsel-thumb.webp",
       subHtml: '<h4>Portal - Verval Ponsel</h4><a href="https://vervalponsel.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/verval-ponsel/verval-ponsel-1.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/verval-ponsel/verval-ponsel-1.webp",
+      src: "assets/img/project/verval-ponsel/verval-ponsel-1.webp",
+      thumb: "assets/img/project/verval-ponsel/verval-ponsel-1.webp",
       subHtml: '<h4>Login - Verval Ponsel</h4><a href="https://vervalponsel.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/verval-ponsel/verval-ponsel-2.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/verval-ponsel/verval-ponsel-2.webp",
+      src: "assets/img/project/verval-ponsel/verval-ponsel-2.webp",
+      thumb: "assets/img/project/verval-ponsel/verval-ponsel-2.webp",
       subHtml: '<h4>Admin Panel - Verval Ponsel</h4><a href="https://vervalponsel.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/verval-ponsel/verval-ponsel-3.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/verval-ponsel/verval-ponsel-3.webp",
+      src: "assets/img/project/verval-ponsel/verval-ponsel-3.webp",
+      thumb: "assets/img/project/verval-ponsel/verval-ponsel-3.webp",
       subHtml: '<h4>Admin Edit Siswa - Verval Ponsel</h4><a href="https://vervalponsel.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/verval-ponsel/verval-ponsel-4.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/verval-ponsel/verval-ponsel-4.webp",
+      src: "assets/img/project/verval-ponsel/verval-ponsel-4.webp",
+      thumb: "assets/img/project/verval-ponsel/verval-ponsel-4.webp",
       subHtml: '<h4>Edit Profil - Verval Ponsel</h4><a href="https://vervalponsel.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/verval-ponsel/verval-ponsel-5.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/verval-ponsel/verval-ponsel-5.webp",
+      src: "assets/img/project/verval-ponsel/verval-ponsel-5.webp",
+      thumb: "assets/img/project/verval-ponsel/verval-ponsel-5.webp",
       subHtml: '<h4>Edit Nomor Ponsel - Verval Ponsel</h4><a href="https://vervalponsel.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/verval-ponsel/verval-ponsel-6.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/verval-ponsel/verval-ponsel-6.webp",
+      src: "assets/img/project/verval-ponsel/verval-ponsel-6.webp",
+      thumb: "assets/img/project/verval-ponsel/verval-ponsel-6.webp",
       subHtml: '<h4>Ubah Kata Sandi - Verval Ponsel</h4><a href="https://vervalponsel.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
   ],
@@ -61,23 +61,23 @@ const semestaGallery = window.lightGallery(semesta, {
   },
   dynamicEl: [
     {
-      src: "https://mrh275.github.io/assets/img/project/semesta/semesta-1.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/semesta/semesta-1.webp",
+      src: "assets/img/project/semesta/semesta-1.webp",
+      thumb: "assets/img/project/semesta/semesta-1.webp",
       subHtml: '<h4>Home - Semesta</h4><a href="https://sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/semesta/semesta-dark.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/semesta/semesta-dark.webp",
+      src: "assets/img/project/semesta/semesta-dark.webp",
+      thumb: "assets/img/project/semesta/semesta-dark.webp",
       subHtml: '<h4>Home (Dark Mode) - Semesta</h4><a href="https://sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/semesta/semesta-2.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/semesta/semesta-2.webp",
+      src: "assets/img/project/semesta/semesta-2.webp",
+      thumb: "assets/img/project/semesta/semesta-2.webp",
       subHtml: '<h4>Article Page - Semesta</h4><a href="https://sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/semesta/semesta-3.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/semesta/semesta-3.webp",
+      src: "assets/img/project/semesta/semesta-3.webp",
+      thumb: "assets/img/project/semesta/semesta-3.webp",
       subHtml: '<h4>Contact Form - Semesta</h4><a href="https://sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
   ],
@@ -96,58 +96,58 @@ const lulusanGallery = window.lightGallery(jejakLulusan, {
   },
   dynamicEl: [
     {
-      src: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-1.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-1.webp",
+      src: "assets/img/project/jejak-lulusan/jejak-lulusan-1.webp",
+      thumb: "assets/img/project/jejak-lulusan/jejak-lulusan-1.webp",
       subHtml: '<h4>Home - Jejak Lulusan</h4><a href="https://alumni.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-2.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-2.webp",
+      src: "assets/img/project/jejak-lulusan/jejak-lulusan-2.webp",
+      thumb: "assets/img/project/jejak-lulusan/jejak-lulusan-2.webp",
       subHtml: '<h4>Admin Dashboard - Jejak Lulusan</h4><a href="https://alumni.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-3.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-3.webp",
+      src: "assets/img/project/jejak-lulusan/jejak-lulusan-3.webp",
+      thumb: "assets/img/project/jejak-lulusan/jejak-lulusan-3.webp",
       subHtml: '<h4>Admin Tabel Biodata Lulusan - Jejak Lulusan</h4><a href="https://alumni.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-4.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-4.webp",
+      src: "assets/img/project/jejak-lulusan/jejak-lulusan-4.webp",
+      thumb: "assets/img/project/jejak-lulusan/jejak-lulusan-4.webp",
       subHtml: '<h4>Admin Edit Biodata Lulusan - Jejak Lulusan</h4><a href="https://alumni.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-5.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-5.webp",
+      src: "assets/img/project/jejak-lulusan/jejak-lulusan-5.webp",
+      thumb: "assets/img/project/jejak-lulusan/jejak-lulusan-5.webp",
       subHtml: '<h4>Admin Tabel Data Orang Tua Lulusan - Jejak Lulusan</h4><a href="https://alumni.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-6.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-6.webp",
+      src: "assets/img/project/jejak-lulusan/jejak-lulusan-6.webp",
+      thumb: "assets/img/project/jejak-lulusan/jejak-lulusan-6.webp",
       subHtml: '<h4>Admin Edit Data Orang Tua Lulusan - Jejak Lulusan</h4><a href="https://alumni.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-7.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-7.webp",
+      src: "assets/img/project/jejak-lulusan/jejak-lulusan-7.webp",
+      thumb: "assets/img/project/jejak-lulusan/jejak-lulusan-7.webp",
       subHtml: '<h4>Admin Tabel Kuliah Lulusan - Jejak Lulusan</h4><a href="https://alumni.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-8.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-8.webp",
+      src: "assets/img/project/jejak-lulusan/jejak-lulusan-8.webp",
+      thumb: "assets/img/project/jejak-lulusan/jejak-lulusan-8.webp",
       subHtml: '<h4>Dashboard Siswa - Jejak Lulusan</h4><a href="https://alumni.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-9.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-9.webp",
+      src: "assets/img/project/jejak-lulusan/jejak-lulusan-9.webp",
+      thumb: "assets/img/project/jejak-lulusan/jejak-lulusan-9.webp",
       subHtml: '<h4>Form Edit Biodata Siswa - Jejak Lulusan</h4><a href="https://alumni.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-10.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-10.webp",
+      src: "assets/img/project/jejak-lulusan/jejak-lulusan-10.webp",
+      thumb: "assets/img/project/jejak-lulusan/jejak-lulusan-10.webp",
       subHtml: '<h4>Form Edit Data Orang Tua Siswa - Jejak Lulusan</h4><a href="https://alumni.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-11.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/jejak-lulusan/jejak-lulusan-11.webp",
+      src: "assets/img/project/jejak-lulusan/jejak-lulusan-11.webp",
+      thumb: "assets/img/project/jejak-lulusan/jejak-lulusan-11.webp",
       subHtml: '<h4>Form Edit Data Kuliah Siswa - Jejak Lulusan</h4><a href="https://alumni.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
   ],
@@ -166,14 +166,44 @@ const graduationGallery = window.lightGallery(graduation, {
   },
   dynamicEl: [
     {
-      src: "https://mrh275.github.io/assets/img/project/graduation-announcement/graduation-1.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/graduation-announcement/graduation-1.webp",
+      src: "assets/img/project/graduation-announcement/graduation-1.webp",
+      thumb: "assets/img/project/graduation-announcement/graduation-1.webp",
       subHtml: '<h4>Home - Graduation Announcement</h4><a href="https://graduation.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
     {
-      src: "https://mrh275.github.io/assets/img/project/graduation-announcement/graduation-2.webp",
-      thumb: "https://mrh275.github.io/assets/img/project/graduation-announcement/graduation-2.webp",
+      src: "assets/img/project/graduation-announcement/graduation-2.webp",
+      thumb: "assets/img/project/graduation-announcement/graduation-2.webp",
       subHtml: '<h4>Announcement Page</h4><a href="https://graduation.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
+    },
+  ],
+});
+
+// Semesta
+const kisiKisi = document.getElementById("kisi-kisi");
+const kisiKisiGallery = window.lightGallery(kisiKisi, {
+  dynamic: true,
+  plugins: [lgZoom, lgThumbnail],
+  closeable: true,
+  closeOnTap: true,
+  escKey: true,
+  mobileSettings: {
+    showCloseIcon: true,
+  },
+  dynamicEl: [
+    {
+      src: "assets/img/project/kisi-kisi/kisi-kisi-1.webp",
+      thumb: "assets/img/project/kisi-kisi/kisi-kisi-1.webp",
+      subHtml: '<h4>Home - Kisi-kisi Ujian</h4><a href="https://kisi-kisi.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
+    },
+    {
+      src: "assets/img/project/kisi-kisi/kisi-kisi-2.webp",
+      thumb: "assets/img/project/kisi-kisi/kisi-kisi-2.webp",
+      subHtml: '<h4>List Kisi-kisi</h4><a href="https://kisi-kisi.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
+    },
+    {
+      src: "assets/img/project/kisi-kisi/kisi-kisi-3.webp",
+      thumb: "assets/img/project/kisi-kisi/kisi-kisi-3.webp",
+      subHtml: '<h4>Login Page</h4><a href="https://kisi-kisi.sman1rawamerta.sch.id" target="_blank" style="font-size:.9rem;">Visit Project</a>',
     },
   ],
 });
@@ -192,4 +222,8 @@ jejakLulusan.addEventListener("click", () => {
 
 graduation.addEventListener("click", () => {
   graduationGallery.openGallery();
+});
+
+kisiKisi.addEventListener("click", () => {
+  kisiKisiGallery.openGallery();
 });
